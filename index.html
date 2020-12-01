@@ -6,19 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plataformas de Streaming</title>
   <!-- CSS style sheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <div class="logo">
-      <img src="" alt="logo">
-    </div>
-    <nav>
-
-    </nav>
-  </header>
-  <main>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="" alt="Logo">
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Cards</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Description</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="home">
+        <div class="home__description">
+            <h2 class="section__title section__title--home">Streaming Services</h2>
+            <p>Aca va la descripción del home</p>
+        </div>
+            <a href="#cards" class="home__btn">Cards</a>
+    </section>
     <!-- Cards with streaming services information -->
     <section class="cards">
       <div class="card">
@@ -262,13 +286,83 @@
         </div>
       </div>
     </section>
-    <section class="description">
+ <section class="description">
+    <h1>Integrantes</h1>
+    <div class="container__profiles">
+        <div class="cards__profile1">
+            <h2>Martin</h2>
+            <img src="https://avatars1.githubusercontent.com/u/69174619?s=400&v=4" alt="Martin">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit.</p>
+        </div>
+        <div class="cards__profile2">
+            <h2>Junior</h2>
+            <img src="https://avatars2.githubusercontent.com/u/66553007?s=400&v=4" alt="Junior">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit</p>
+        </div>
+        <div class="cards__profile3">
+            <h2>Javier Diaz</h2>
+            <img src="https://avatars3.githubusercontent.com/u/70081319?s=400&v=4" alt="Javier Diaz">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit.</p>
+        </div>
+        <div class="cards__profile4">
+            <h2>Gonzalo Lamas</h2>
+            <img src="https://avatars3.githubusercontent.com/u/74612409?s=400&v=4" alt="Gonzalo Lamas">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit</p>
+        </div>
+    </div>
+<div class="second__section">
+    <h2>Tecnologias</h2>
+    <div>
+    <img src="img/iconfinder_badge-html-5_317755.svg" alt="html">
+    <img src="img/iconfinder_badge-css-3_317756.svg" alt="css">
+    <i class="fab fa-js fa-6x" style="color: yellow;"></i>
+    </div>
+</div>
 
+<div class="third__section">
+    <div>
+        <h2>Recursos</h2>
+        <p>Draw.io</p>
+        <p>Flaticon</p>
+        <p>Figma</p>
+    </div>
+    <div>
+        <h3>Objetivo</h3>
+        <p>Diseño base</p>
+        <p>Iconos</p>
+        <p>Diseño de interface</p>
+    </div>
+    <div>
+        <h3>Links</h3>
+        <p><a href="https://draw.io.com" target="_blank">https://draw.io.com</a></p>
+        <p><a href="https://www.flaticon.com" target="_blank">https://www.flaticon.com</a></p>
+        <p><a href="https://www.figma.com" target="_blank">https://www.figma.com</a></p>
+    </div>
+
+</div>
+
+</section>    
+</main>
+<footer class="footer">
+    <section class="footer--contact">
+        <div class="footer--contact-list-container">
+            <ul class="footer--contact-list">
+                <li><a href="https://www.facebook.com/"><i></i></a></li>
+                <li><a href="https://twitter.com/"><i></i></a></li>
+                <li><a href="https://www.facebook.com/"><i></i></a></li>
+                <li><a href="https://github.com/"><i></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer--contact-team">
+            <p>Pagina desarrollada por: <em>Streaming Team</em>.</p>
+        </div>
     </section>
-  </main>
-  <footer>
-
-  </footer>
+    <section class="footer--copy">
+        <p>COPYTIGHT &COPY; 2020, ALL RIGHTS RESERVED.</p>
+    </section>
+</footer>    
+<script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
