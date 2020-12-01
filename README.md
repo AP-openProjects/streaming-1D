@@ -3,3 +3,4 @@
 Javier Diaz
 Junior Vitteri
 Martin Doello
+Gonzalo Lamas
