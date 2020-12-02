@@ -12,38 +12,45 @@
 
 <body>
   <header>
-    <nav class="nav">
-      <div class="nav__logo">
-        <img src="" alt="Logo">
-      </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Cards</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Description</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contact</a>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="burger__line"></div>
-        <div class="burger__line"></div>
-        <div class="burger__line"></div>
-      </div>
+    <nav class="nav" id="navbar">
+      <!-- Logo -->
+        <div class="nav__logo">
+            <img src="" alt="Logo">
+        </div>
+        <!-- Burger -->
+        <a href="#" class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </a>
+        <!-- Nav items -->
+        <div class="nav__list">
+          <ul class="nav__list-ul">
+              <li class="nav__item">
+                  <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">Cards</a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">Description</a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+              </li>
+          </ul>
+        </div>
     </nav>
   </header>
-  <main>
+<main>
+      <!-- Home -->
     <section class="home">
-      <div class="home__description">
-        <h2 class="section__title section__title--home">Streaming Services</h2>
-        <p>Aca va la descripción del home</p>
-      </div>
-      <a href="#cards" class="home__btn">Cards</a>
+        <div class="home__description">
+            <h2 class="section__title section__title-home">Streaming Services</h2>
+            <p>Te ayudamos a elegir el servicio que mejor se adapte a vos</p>
+        </div>
+            <a href="#cards" class="btn home__btn">News</a>
+            <a href="#" class="btn home__btn">Blog</a>
     </section>
     <!-- Cards with streaming services information -->
     <section class="cards">
