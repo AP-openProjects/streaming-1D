@@ -1,0 +1,42 @@
+/* Custom properties */
+
+:root {
+
+    --clr-title: #fff;
+    --clr--bgc1-footer: #11001C;
+    --clr-bgc2: #880d63;
+    --clr-bgc3: #35012C;
+    --clr-footer2: #4F0147;
+
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.25rem;
+}
+/* General styles */
+
+
+/* Buttons */
+
+
+/* typography */
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+/* Header section*/
+
+
+/* Home section */
+
+
+/* Cards section */
+
+
+/* Description section */
+
+
+/* Footer section */
