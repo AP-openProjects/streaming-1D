@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plataformas de Streaming</title>
   <!-- CSS style sheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <header>
     <nav class="nav" id="navbar">
@@ -53,323 +55,351 @@
     <!-- Cards with streaming services information -->
     <section class="cards">
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/Netflix.png" alt="Netflix">
-            <div class="frinfo">
-              <p class="service">Netflix</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/Netflix.png" alt="Netflix">
+            </div>
+            <p>Netflix</p>
+            <p>★★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Netflix</h2>
-            <p class="strinfo">Tipo de contenido: Series y peliculas</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 13,99us$s por mes</p>
-            <p class="strinfo">Año de lanzamiento: 1997</p>
+          <div class="card__back">
+            <h2>Netflix</h2>
+            <p>Contenido: Series y peliculas</p>
+            <p>Contenido original: Si</p>
+            <p>Valor: Desde 13,99us$s por mes</p>
+            <p>TV en vivo: No</p>
+            <p>Lanzamiento: 1997</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/hulu.png" alt="Hulu">
-            <div class="frinfo">
-              <p class="service">Hulu</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/hulu.png" alt="Hulu">
+            </div>
+            <p>Hulu</p>
+            <p>★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Hulu</h2>
-            <p class="strinfo">Tipo de contenido: Series, peliculas y TV</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: Pago extra</p>
-            <p class="price">Valor: Desde 5,99us$s por mes</p>
-            <p class="strinfo">Año de lanzamiento: 2007</p>
+          <div class="card__back">
+            <h2>Hulu</h2>
+            <p>Contenido: Series, peliculas y TV</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: Pago extra</p>
+            <p>Valor: Desde 5,99us$s por mes</p>
+            <p>Lanzamiento: 2007</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/youtube.png" alt="Youtube">
-            <div class="frinfo">
-              <p class="service">Youtube</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/youtube.png" alt="Youtube">
+            </div>
+            <p>Youtube</p>
+            <p>★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Youtube</h2>
-            <p class="strinfo">Tipo de contenido: Series, peliculas y vlogs</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 11,99us$s por mes</p>
-            <p class="strinfo">Año de lanzamiento: 2005</p>
+          <div class="card__back">
+            <h2>Youtube</h2>
+            <p>Contenido: Series, peliculas y vlogs</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: No</p>
+            <p>Valor: Desde 11,99us$s por mes</p>
+            <p>Lanzamiento: 2005</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/disney.png" alt="Disney Plus">
-            <div class="frinfo">
-              <p class="service">Disney Plus</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/disney.png" alt="Disney+">
+            </div>
+            <p>Disney+</p>
+            <p>★★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Disney Plus</h2>
-            <p class="strinfo">Tipo de contenido: Series y peliculas</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 7,99us$s por mes</p>
-            <p class="strinfo">Año de lanzamiento: 2019</p>
+          <div class="card__back">
+            <h2>Disney+</h2>
+            <p>Contenido: Series y peliculas</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: No</p>
+            <p>Valor: Desde 7,99us$s por mes</p>
+            <p>Lanzamiento: 2019</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/apple.png" alt="Apple TV">
-            <div class="frinfo">
-              <p class="service">Apple TV</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/apple.png" alt="Apple TV">
+            </div>
+            <p>Apple TV</p>
+            <p>★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Apple TV</h2>
-            <p class="strinfo">Tipo de contenido: Series y peliculas</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 4,99us$s por mes</p>
-            <p class="strinfo">Año de lanzamiento: 2007</p>
+          <div class="card__back">
+            <h2>Apple TV</h2>
+            <p>Contenido: Series y peliculas</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: No</p>
+            <p>Valor: Desde 4,99us$s por mes</p>
+            <p>Lanzamiento: 2007</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/vudu.png" alt="Vudu">
-            <div class="frinfo">
-              <p class="service">Vudu</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/vudu.png" alt="Vudu">
+            </div>
+            <p>Vudu</p>
+            <p>★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Vudu</h2>
-            <p class="strinfo">Tipo de contenido: Peliculas</p>
-            <p class="strinfo">Contenido original: No</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 4,99us$s por alquiler</p>
-            <p class="strinfo">Año de lanzamiento: 2019</p>
+          <div class="card__back">
+            <h2>Vudu</h2>
+            <p>Contenido: Peliculas</p>
+            <p>Contenido original: No</p>
+            <p>TV en vivo: No</p>
+            <p>Valor: Desde 4,99us$s por alquiler</p>
+            <p>Lanzamiento: 2019</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/HBON.png" alt="HBO Now">
-            <div class="frinfo">
-              <p class="service">HBO Now</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/hbon.png" alt="HBO Now">
+            </div>
+            <p>HBO Now</p>
+            <p>★★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: HBO Now</h2>
-            <p class="strinfo">Tipo de contenido: Series y peliculas</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 14,99us$s por mes/p>
-            <p class="strinfo">Año de lanzamiento: 1997</p>
+          <div class="card__back">
+            <h2>HBO Now</h2>
+            <p>Contenido: Series y peliculas</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: No</p>
+            <p>Valor: Desde 14,99us$s por mes</p>
+            <p>Lanzamiento: 1997</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/crackle.png" alt="Crackle">
-            <div class="frinfo">
-              <p class="service">Crackle</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/crackle.png" alt="Crackle">
+            </div>
+            <p>Crackle</p>
+            <p>★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Crackle</h2>
-            <p class="strinfo">Tipo de contenido: Series, peliculas y TV</p>
-            <p class="strinfo">Contenido original: No</p>
-            <p class="strinfo">TV en vivo: Si</p>
-            <p class="price">Valor: Gratis</p>
-            <p class="strinfo">Año de lanzamiento: 2007</p>
+          <div class="card__back">
+            <h2>Crackle</h2>
+            <p>Contenido: Series, peliculas y TV</p>
+            <p>Contenido original: No</p>
+            <p>TV en vivo: Si</p>
+            <p>Valor: Gratis</p>
+            <p>Lanzamiento: 2007</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/cbs.png" alt="CBS All Access">
-            <div class="frinfo">
-              <p class="service">CBS All Access</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/cbs.png" alt="CBS All Access">
+            </div>
+            <p>CBS</p>
+            <p>★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: CBS All Access</h2>
-            <p class="strinfo">Tipo de contenido: TV</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: Si</p>
-            <p class="price">Valor: Desde 5,99us$s</p>
-            <p class="strinfo">Año de lanzamiento: 2014</p>
+          <div class="card__back">
+            <h2>CBS All Access</h2>
+            <p>Contenido: TV</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: Si</p>
+            <p>Valor: Desde 5,99us$s</p>
+            <p>Lanzamiento: 2014</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/sling.png" alt="Sling Television">
-            <div class="frinfo">
-              <p class="service">Sling Television</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/sling.png" alt="Sling Television">
+            </div>
+            <p>Sling</p>
+            <p>★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Sling Television</h2>
-            <p class="strinfo">Tipo de contenido: TV</p>
-            <p class="strinfo">Contenido original: No</p>
-            <p class="strinfo">TV en vivo: Si</p>
-            <p class="price">Valor: Desde 29,99us$s</p>
-            <p class="strinfo">Año de lanzamiento: 2015</p>
+          <div class="card__back">
+            <h2>Sling Television</h2>
+            <p>Contenido: TV</p>
+            <p>Contenido original: No</p>
+            <p>TV en vivo: Si</p>
+            <p>Valor: Desde 29,99us$s</p>
+            <p>Lanzamiento: 2015</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/prime.png" alt="Amazon Prime Video">
-            <div class="frinfo">
-              <p class="service">Amazon Prime Video</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/prime.png" alt="Amazon Prime Video">
+            </div>
+            <p>Amazon</p>
+            <p>★★★★</p>
+            <div class="card__front__btn">
+              <p>Info</p>
             </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Amazon Prime Video</h2>
-            <p class="strinfo">Tipo de contenido: Series y peliculas</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: No</p>
-            <p class="price">Valor: Desde 12,99us$s</p>
-            <p class="strinfo">Año de lanzamiento: 2006</p>
+          <div class="card__back">
+            <h2>Amazon</h2>
+            <p>Contenido: Series y peliculas</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: No</p>
+            <p>Valor: Desde 12,99us$s</p>
+            <p>Lanzamiento: 2006</p>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/fubo.png" alt="Fubo">
-            <div class="frinfo">
-              <p class="service">Fubo</p>
-              <p class="cal">Calificacion:</p>
-              <p class="stars">⭐⭐⭐⭐</p>
+        <div class="card__inner">
+          <div class="card__front">
+            <div class="card__front__img">
+              <img src="img/fubo.png" alt="Fubo">
             </div>
+              <p>Fubo</p>
+              <p>★★★★</p>
+              <div class="card__front__btn">
+                <p>Info</p>
+              </div>
           </div>
-          <div class="card-back">
-            <h2 class="platform">Plataforma: Fubo</h2>
-            <p class="strinfo">Tipo de contenido: Deportes</p>
-            <p class="strinfo">Contenido original: Si</p>
-            <p class="strinfo">TV en vivo: Si</p>
-            <p class="price">Valor: Desde 59,99us$s</p>
-            <p class="strinfo">Año de lanzamiento: 2015</p>
+          <div class="card__back">
+            <h2>Fubo</h2>
+            <p>Contenido: Deportes</p>
+            <p>Contenido original: Si</p>
+            <p>TV en vivo: Si</p>
+            <p>Valor: Desde 59,99us$s</p>
+            <p>Lanzamiento: 2015</p>
           </div>
         </div>
       </div>
     </section>
- <section class="description">
-    <h1>Integrantes</h1>
-    <div class="container__profiles">
+    <section class="description">
+      <h1>Integrantes</h1>
+      <div class="container__profiles">
         <div class="cards__profile1">
-            <h2>Martin</h2>
-            <img src="https://avatars1.githubusercontent.com/u/69174619?s=400&v=4" alt="Martin">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit.</p>
+          <h2>Martin</h2>
+          <img src="https://avatars1.githubusercontent.com/u/69174619?s=400&v=4" alt="Martin">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus,
+            vel, incidunt id, molestias totam sapiente laboriosam odit.</p>
         </div>
         <div class="cards__profile2">
-            <h2>Junior</h2>
-            <img src="https://avatars2.githubusercontent.com/u/66553007?s=400&v=4" alt="Junior">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit</p>
+          <h2>Junior</h2>
+          <img src="https://avatars2.githubusercontent.com/u/66553007?s=400&v=4" alt="Junior">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus,
+            vel, incidunt id, molestias totam sapiente laboriosam odit</p>
         </div>
         <div class="cards__profile3">
-            <h2>Javier Diaz</h2>
-            <img src="https://avatars3.githubusercontent.com/u/70081319?s=400&v=4" alt="Javier Diaz">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit.</p>
+          <h2>Javier Diaz</h2>
+          <img src="https://avatars3.githubusercontent.com/u/70081319?s=400&v=4" alt="Javier Diaz">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus,
+            vel, incidunt id, molestias totam sapiente laboriosam odit.</p>
         </div>
         <div class="cards__profile4">
-            <h2>Gonzalo Lamas</h2>
-            <img src="https://avatars3.githubusercontent.com/u/74612409?s=400&v=4" alt="Gonzalo Lamas">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus, vel, incidunt id, molestias totam sapiente laboriosam odit</p>
+          <h2>Gonzalo Lamas</h2>
+          <img src="https://avatars3.githubusercontent.com/u/74612409?s=400&v=4" alt="Gonzalo Lamas">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quam at placeat tempore voluptatibus,
+            vel, incidunt id, molestias totam sapiente laboriosam odit</p>
         </div>
-    </div>
-<div class="second__section">
-    <h2>Tecnologias</h2>
-    <div>
-    <img src="img/iconfinder_badge-html-5_317755.svg" alt="html">
-    <img src="img/iconfinder_badge-css-3_317756.svg" alt="css">
-    <i class="fab fa-js fa-6x" style="color: yellow;"></i>
-    </div>
-</div>
+      </div>
+      <div class="second__section">
+        <h2>Tecnologias</h2>
+        <div>
+          <img src="img/iconfinder_badge-html-5_317755.svg" alt="html">
+          <img src="img/iconfinder_badge-css-3_317756.svg" alt="css">
+          <i class="fab fa-js fa-6x" style="color: yellow;"></i>
+        </div>
+      </div>
 
-<div class="third__section">
-    <div>
-        <h2>Recursos</h2>
-        <p>Draw.io</p>
-        <p>Flaticon</p>
-        <p>Figma</p>
-    </div>
-    <div>
-        <h3>Objetivo</h3>
-        <p>Diseño base</p>
-        <p>Iconos</p>
-        <p>Diseño de interface</p>
-    </div>
-    <div>
-        <h3>Links</h3>
-        <p><a href="https://draw.io.com" target="_blank">https://draw.io.com</a></p>
-        <p><a href="https://www.flaticon.com" target="_blank">https://www.flaticon.com</a></p>
-        <p><a href="https://www.figma.com" target="_blank">https://www.figma.com</a></p>
-    </div>
+      <div class="third__section">
+        <div>
+          <h2>Recursos</h2>
+          <p>Draw.io</p>
+          <p>Flaticon</p>
+          <p>Figma</p>
+        </div>
+        <div>
+          <h3>Objetivo</h3>
+          <p>Diseño base</p>
+          <p>Iconos</p>
+          <p>Diseño de interface</p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <p><a href="https://draw.io.com" target="_blank">https://draw.io.com</a></p>
+          <p><a href="https://www.flaticon.com" target="_blank">https://www.flaticon.com</a></p>
+          <p><a href="https://www.figma.com" target="_blank">https://www.figma.com</a></p>
+        </div>
 
-</div>
+      </div>
 
-</section>    
-</main>
-<footer class="footer">
+    </section>
+  </main>
+  <footer class="footer">
     <section class="footer--contact">
-        <div class="footer--contact-list-container">
-            <ul class="footer--contact-list">
-                <li><a href="https://www.facebook.com/"><i></i></a></li>
-                <li><a href="https://twitter.com/"><i></i></a></li>
-                <li><a href="https://www.facebook.com/"><i></i></a></li>
-                <li><a href="https://github.com/"><i></i></a></li>
-            </ul>
-        </div>
+      <div class="footer--contact-list-container">
+        <ul class="footer--contact-list">
+          <li><a href="https://www.facebook.com/"><i></i></a></li>
+          <li><a href="https://twitter.com/"><i></i></a></li>
+          <li><a href="https://www.facebook.com/"><i></i></a></li>
+          <li><a href="https://github.com/"><i></i></a></li>
+        </ul>
+      </div>
 
-        <div class="footer--contact-team">
-            <p>Pagina desarrollada por: <em>Streaming Team</em>.</p>
-        </div>
+      <div class="footer--contact-team">
+        <p>Pagina desarrollada por: <em>Streaming Team</em>.</p>
+      </div>
     </section>
     <section class="footer--copy">
-        <p>COPYTIGHT &COPY; 2020, ALL RIGHTS RESERVED.</p>
+      <p>COPYTIGHT &COPY; 2020, ALL RIGHTS RESERVED.</p>
     </section>
-</footer>    
-<script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
