@@ -1,37 +1,32 @@
 /* Custom properties */
 
 :root {
+  --clr-title: #fff;
+  --clr--bgc1-footer: #11001c;
+  --clr-bgc2: #880d63;
+  --clr-bgc3: #35012c;
+  --clr-footer2: #4f0147;
 
-    --clr-title: #fff;
-    --clr--bgc1-footer: #11001C;
-    --clr-bgc2: #880d63;
-    --clr-bgc3: #35012C;
-    --clr-footer2: #4F0147;
-
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.25rem;
+  --fs-h1: 4.5rem;
+  --fs-h2: 3.25rem;
 }
 /* General styles */
 
-
 /* Buttons */
-
 
 /* typography */
 
 h1 {
-    font-size: var(--fs-h1);
+  font-size: var(--fs-h1);
 }
 
 h2 {
-    font-size: var(--fs-h2);
+  font-size: var(--fs-h2);
 }
 
 /* Header section*/
 
-
 /* Home section */
-
 
 /* Cards section */
 .cards{
@@ -142,8 +137,138 @@ h2 {
     }
   
 
-
 /* Description section */
+body{
+    background-color: var(--clr-footer2);
+}
+/* Lineas separadoras del background */
+.separator__line-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: var(--clr-bgc3);
+    z-index: -1;
+    transform: skewY(15deg);
+    transform-origin: top right;
+  }
+  .separator__line-2 {
+    position: absolute;
+    top:100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-bgc3);
+    z-index: -1;
+    transform: skewY(-25deg);
+    transform-origin: top right;
+  }
+/* contenedor de las cartas con su respectivo tamaño */
+.container__profiles{
+    width: 100%;
+	display: flex;
+	max-width: 1100px;
+    margin: auto;
+}
 
+  /* Diseño titulo cartas */
+.title__principal{
+    margin-top: 350px;
+    text-align: center;
+
+}
+.title__cards{
+    text-align: left;
+}
+/* diseño para cada unas de las cartas */
+.card__profile{
+    width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+} 
+
+.card__profile img{
+    width: 100%;
+	height: 210px;
+}
+
+.container__profiles .card__profile h2{
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+
+.container__profiles .card__profile p{
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.second__section-tecnologics{
+    margin-top: 150px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.card__profile{
+		flex-wrap: wrap;
+	}
+	.container__profiles{
+		height: 760px;
+	}
+}
 
 /* Footer section */
+footer {
+  width: 100%;
+  height: 180px;
+}
+.footer__contact {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr--bgc1-footer);
+}
+.footer__team p {
+  color: #fff;
+  font-size: 2.4rem;
+}
+.footer__contact-list {
+  list-style: none;
+}
+.footer__contact-list li {
+  display: inline-block;
+}
+.footer__contact-list li a {
+  text-decoration: none;
+}
+.footer__contact-list li a i {
+  color: #fff;
+  border-radius: 10px;
+  font-size: 4.2rem;
+  padding: 1.5rem;
+}
+.footer__contact-list li a i:hover {
+  color: var(--clr-footer2);
+}
+.footer__copy {
+  height: 60px;
+  background-color: var(--clr-footer2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__copy p {
+  color: #fff;
+  font-size: 1.2rem;
+}
