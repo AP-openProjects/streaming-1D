@@ -1,4 +1,4 @@
-# project-1D
+# streaming-1D
 
 Javier Diaz
 Junior Vitteri
