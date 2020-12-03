@@ -1,0 +1,149 @@
+/* Custom properties */
+
+:root {
+
+    --clr-title: #fff;
+    --clr--bgc1-footer: #11001C;
+    --clr-bgc2: #880d63;
+    --clr-bgc3: #35012C;
+    --clr-footer2: #4F0147;
+
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.25rem;
+}
+/* General styles */
+
+
+/* Buttons */
+
+
+/* typography */
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+/* Header section*/
+
+
+/* Home section */
+
+
+/* Cards section */
+.cards{
+    max-width: 1280px;
+  }
+  
+  .card {
+      background-color: transparent;
+      width: 185px;
+      height: 315px;
+      border-radius: 10px;
+      float: left;
+      margin-top: 20px;
+      margin-left: 20px;
+      perspective: 1000px; 
+    }
+    
+    /* This container is needed to position the front and back side */
+    .card__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 1.1s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .card:hover .card__inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .card__front, .card__back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side */
+    .card__front {
+      background-color: white;
+      box-shadow: -3px -3px 10px gray inset;
+      border-radius: 10px;
+    } 
+    
+    .card__front__img{
+        background: rgb(79,1,71);
+        background: linear-gradient(180deg, rgba(79,1,71,1) 0%, rgba(17,0,28,1) 100%);
+        box-shadow: 4px 4px 10px black inset;
+        height: 157px;
+        border: 3px solid #4F0147;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card__front__img img{
+        margin-top: 50px;
+    }
+/*esta bien seleccionado el child desde una clase?*/
+    .card__front :nth-child(2){
+        margin-top: 20px;
+        font-size: 4rem;
+    }
+
+    .card__front :nth-child(3){
+        color: gold;
+        font-size: 2.5rem;
+    }
+
+    .card__front__btn{
+        position: absolute;
+        left: 100px;
+        top: 270px;
+        background-color: #3A015C;
+        width: 65px;
+        height: 25px;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 12px;
+        text-align: center;
+        line-height: 25px;
+        box-shadow: 0px 2px 4px white inset, 0px 2px 2px grey;
+    
+    }
+  
+    /* Style the back side */
+    .card__back {
+      box-sizing: border-box;
+      padding: 10px 15px 0px 15px;
+      background: rgb(79,1,71);
+      background: linear-gradient(180deg, rgba(79,1,71,1) 0%, rgba(17,0,28,1) 100%);
+      color: white;
+      border-radius: 10px;
+      transform: rotateY(180deg);
+      text-align: left;
+    }
+
+    .card__back h2{
+        text-align: center;
+    }
+
+    .card__back p{
+        font-size: large;
+        margin-top: 15px;
+    }
+  
+
+
+/* Description section */
+
+
+/* Footer section */
