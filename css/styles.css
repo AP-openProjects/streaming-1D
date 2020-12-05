@@ -142,22 +142,36 @@ body{
     background-color: var(--clr-footer2);
 }
 /* Lineas separadoras del background */
-.separator__line-1 {
+.linea__separadora-fondo1 {
     position: absolute;
-    top: 0;
+    top: 78%;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    background: var(--clr-bgc3);
+    height: 100%;
+    background: var(--clr--bgc1-footer);
     z-index: -1;
     transform: skewY(15deg);
     transform-origin: top right;
   }
-  .separator__line-2 {
+
+  .linea__separadora-fondo2{
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      background: var(--clr--bgc1-footer);
+      z-index: -2;
+      transform: skewY(0deg);
+      transform-origin: top right;
+  }
+  .linea__separadora-fondo3 {
     position: absolute;
-    top:100%;
+    top:200%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -168,26 +182,45 @@ body{
     transform: skewY(-25deg);
     transform-origin: top right;
   }
-/* contenedor de las cartas con su respectivo tamaño */
-.container__profiles{
+
+  .linea__separadora-fondo4 {
+    position: absolute;
+    top: 300%;
+    bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
-	display: flex;
-	max-width: 1100px;
-    margin: auto;
-}
-
-  /* Diseño titulo cartas */
-.title__principal{
-    margin-top: 350px;
-    text-align: center;
-
+    height: 100%;
+    background: var(--clr-bgc3);
+    z-index: -2;
+    transform: skewY(0deg);
+    transform-origin: top right;
+  }
+ /* Diseño titulo cartas perfiles */
+ .description__profiles .imagen__separadora-secciones{
+   text-align: right;
+   opacity: 0.3;
+ }
+ .title__principal{
+  margin: 50px auto;
+  text-align: center;
+  color: var(--clr-title);
 }
 .title__cards{
-    text-align: left;
+  margin: 50px auto;
+  text-align: left;
+  color: var(--clr-title);
+}
+/* contenedor de las cartas con su respectivo tamaño */
+.container__profiles{
+  width: 100%;
+	display: flex;
+  max-width: 1100px;
+  margin: auto;
 }
 /* diseño para cada unas de las cartas */
 .card__profile{
-    width: 100%;
+  width: 100%;
 	margin: 20px;
 	border-radius: 6px;
 	overflow: hidden;
@@ -198,7 +231,7 @@ body{
 } 
 
 .card__profile img{
-    width: 100%;
+  width: 100%;
 	height: 210px;
 }
 
@@ -215,7 +248,42 @@ body{
 }
 
 .second__section-tecnologics{
-    margin-top: 150px;
+    margin: 50px auto;
+    color: var(--clr-title);
+}
+
+.second__section-tecnologics h2{
+  margin: 40px auto;
+}
+
+.second__section-tecnologics .iconos__resolucion{
+  text-align: center;
+}
+
+.second__section-tecnologics .iconos__resolucion img{
+  width:30%; 
+  height:30%;
+  display: inline; 
+}
+
+.third__section-resources{
+  margin: 40px auto;
+}
+
+.third__section-resources h2{
+  color: var(--clr-title);
+  margin: 40px auto;
+}
+
+.third__section-resources .links__diseño{
+  font-size: 2rem;
+  text-align: center;
+  color: var(--clr-title);
+  text-decoration: none;
+}
+
+.third__section-resources a{
+  color: var(--clr-title);
 }
 
 @media only screen and (min-width:320px) and (max-width:768px){
