@@ -218,7 +218,74 @@ body{
   max-width: 1200px;
   margin: auto;
 }
+
 /* diseño para cada unas de las cartas */
+.container__profiles .card__profile .nombre__gradiente-1{
+  text-align: center;
+  background: -webkit-linear-gradient(#f12711,#f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f12711;
+  display: block;
+  margin-left: 19px;
+}
+
+.container__profiles .card__profile .cinta__gradiente-1{
+  display: block;
+  font-size: 16px;
+  background: rgb(241,39,17);
+  background: radial-gradient(circle, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 100%);
+  text-align: center;
+}
+.container__profiles .card__profile .nombre__gradiente-2{
+  text-align: center;
+  background: -webkit-linear-gradient(#12c2e9,#c471ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #12c2e9;
+  display: block;
+  margin-left: 19px;
+}
+.container__profiles .card__profile .cinta__gradiente-2{
+  display: block;
+  font-size: 16px;
+  background: rgb(18,194,233);
+  background: radial-gradient(circle, rgba(18,194,233,1) 0%, rgba(196,113,237,1) 100%);
+  text-align: center;
+}
+.container__profiles .card__profile .nombre__gradiente-3{
+  text-align: center;
+  background: -webkit-linear-gradient(#1f4037,#99f2c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #1f4037;
+  display: block;
+  margin-left: 19px;
+ }
+.container__profiles .card__profile .cinta__gradiente-3{
+  display: block;
+  font-size: 16px;
+  background: rgb(31,64,55);
+  background: radial-gradient(circle, rgba(31,64,55,1) 0%, rgba(153,242,200,1) 100%);
+  text-align: center;
+ }
+.container__profiles .card__profile .nombre__gradiente-4{
+  text-align: center;
+  background: -webkit-linear-gradient(#c31432,#240b36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #c31432;
+  display: block;
+  margin-left: 19px;
+}
+
+.container__profiles .card__profile .cinta__gradiente-4{
+  display: block;
+  font-size: 16px;
+  background: rgb(195,20,50);
+  background: radial-gradient(circle, rgba(195,20,50,1) 0%, rgba(36,11,54,1) 100%);
+  text-align: center;
+}
 .card__profile{
   width: 950px;
   height: 330px;
@@ -228,7 +295,7 @@ body{
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
   cursor: default;
-} 
+}
 
 .card__profile .forma__redonda-imagen{
   width: 50%;
@@ -236,7 +303,7 @@ body{
   border-radius: 50%;
   position: relative;
   left: 60px;
-  bottom: 50px;
+  bottom: 30px;
 }
 
 .container__profiles .desalineacion__1{
@@ -259,6 +326,7 @@ body{
     color: #6a6a6a;
     font-size: 14px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .second__section-tecnologics{
