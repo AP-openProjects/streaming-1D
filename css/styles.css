@@ -54,11 +54,11 @@ h2 {
       transform-style: preserve-3d;
     }
     
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .card:hover .card__inner {
+    .flip {
       transform: rotateY(180deg);
     }
-    
+
+
     /* Position the front and back side */
     .card__front, .card__back {
       position: absolute;
@@ -80,7 +80,7 @@ h2 {
         background: linear-gradient(180deg, rgba(79,1,71,1) 0%, rgba(17,0,28,1) 100%);
         box-shadow: 4px 4px 10px black inset;
         height: 157px;
-        border: 3px solid #4F0147;
+        border: 1px solid #4F0147;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -88,7 +88,7 @@ h2 {
     .card__front__img img{
         margin-top: 50px;
     }
-/*esta bien seleccionado el child desde una clase?*/
+
     .card__front :nth-child(2){
         margin-top: 20px;
         font-size: 4rem;
@@ -112,7 +112,16 @@ h2 {
         text-align: center;
         line-height: 25px;
         box-shadow: 0px 2px 4px white inset, 0px 2px 2px grey;
+        cursor:pointer;
+    }
+
+    .card__front__btn:hover{
+      box-shadow: 0 0 10px 0 #3A015C inset, 0 0 5px 2px #3A015C;
+    }
     
+    .card__front__btn:active{
+      background-color: #3b015cb9;
+      box-shadow: 0px 4px 10px #3A015C inset;
     }
   
     /* Style the back side */
@@ -133,7 +142,7 @@ h2 {
 
     .card__back p{
         font-size: large;
-        margin-top: 15px;
+        margin-top: 8px;
     }
   
 
