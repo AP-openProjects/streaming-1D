@@ -132,6 +132,10 @@ h2 {
       display: inline;
   }
 
+  .nav__list-open .nav__list {
+    background-color: transparent;
+  }
+
   .nav__list-ul {
       flex-direction: row;
       display: flex;
