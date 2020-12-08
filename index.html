@@ -12,48 +12,49 @@
 
 <body>
   <header>
-    <nav class="nav" id="navbar">
-      <!-- Logo -->
-        <div class="nav__logo">
-            <img src="" alt="Logo">
-        </div>
-        <!-- Burger -->
-        <a href="#" class="toggle-button">
-          <span class="toggle-button__bar"></span>
-          <span class="toggle-button__bar"></span>
-          <span class="toggle-button__bar"></span>
-        </a>
-        <!-- Nav items -->
-        <div class="nav__list">
-          <ul class="nav__list-ul">
-              <li class="nav__item">
-                  <a href="#" class="nav__link">Home</a>
-              </li>
-              <li class="nav__item">
-                  <a href="#" class="nav__link">Cards</a>
-              </li>
-              <li class="nav__item">
-                  <a href="#" class="nav__link">Description</a>
-              </li>
-              <li class="nav__item">
-                  <a href="#" class="nav__link">Contact</a>
-              </li>
-          </ul>
-        </div>
-    </nav>
+        <nav class="nav" id="navbar">
+          <!-- Logo -->
+            <div class="nav__logo">
+                <a href="#home"><img src="img/LOGO.png" alt="Logo" id="logo"></a>
+            </div>
+            <!-- Burger -->
+            <button class="toggle-button" aria-label="toggle navigation">
+              <span class="toggle-button__bar"></span>
+              <span class="toggle-button__bar"></span>
+              <span class="toggle-button__bar"></span>
+            </button>
+            <!-- Nav items -->
+            <div class="nav__list">
+              <ul class="nav__list-ul">
+                  <li class="nav__item">
+                      <a href="#home" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#cards" class="nav__link">Cards</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#description" class="nav__link">Description</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
   </header>
 <main>
       <!-- Home -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="home__description">
-            <h2 class="section__title section__title-home">Streaming Services</h2>
-            <p>Te ayudamos a elegir el servicio que mejor se adapte a vos</p>
+            <p>¡Te ayudamos a elegir el servicio que mejor se adapte a vos!</p>
         </div>
+        <div class="home__btn-container">
             <a href="#cards" class="btn home__btn">News</a>
-            <a href="#" class="btn home__btn">Blog</a>
+            <a href="#cards" class="btn home__btn">Blog</a>
+        </div>
     </section>
     <!-- Cards with streaming services information -->
-    <section class="cards">
+    <section class="cards" id="cards">
       <div class="card">
         <div id="netflix" class="card__inner">
           <div class="card__front">
@@ -321,12 +322,11 @@
      </section>
 <section>
       <div class="linea__separadora-fondo1">
-
       </div>
       <div class="linea__separadora-fondo2">
   </div>
     </section>
-    <section class="description__profiles">
+    <section class="description__profiles" id="description">
         <div class="imagen__separadora-secciones"><img src="img/flecha-hacia-abajo.svg" alt="flecha__abajo"></div>
         <h1 class="title__principal">QUIENES SOMOS</h1>
         <h2 class="title__cards">Integrantes</h2>
@@ -390,7 +390,7 @@
     </section>
     </main>
     <footer>
-        <section class="footer__contact">
+        <section class="footer__contact" id="contact">
 
             <div class="footer__team">
                 <p>Pagina desarrollada por: <em>Streaming Team</em>.</p>
@@ -418,9 +418,11 @@
             </div>
         </section>
     </footer>
-    <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"  src="js/flipcard.js"></script>
 
+      <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
+      <script src="/js/navscript.js"></script>
+      <script src="/js/slide.js"></script>
+      <script src="js/flipcard.js"></script>
 </body>
 
 </html>

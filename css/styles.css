@@ -25,8 +25,197 @@ h2 {
 }
 
 /* Header section*/
+/* Nav section */
 
-/* Home section */
+.nav {
+  position: fixed;
+  display: flex;
+  background-color: transparent;
+  /* background-color: #4F0147; */
+  color: var(--clr-title);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 100;
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav__logo {
+  margin-left: 1.6em;
+}
+
+.nav__logo img {
+  padding-top: 10px;
+  width: 280px;
+}
+
+.toggle-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 12px;
+  padding: .8em;
+  z-index: 1000;
+  right: 1.6em;
+  top: 1.6em;
+}
+
+.toggle-button__bar {
+  background: var(--clr-title);
+  width: 2em;
+  height: 3px;
+  margin-top: 3px;
+  border-radius: 1.6em;
+  display: block;
+  position: relative;
+}
+
+.nav__list {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* .nav__list.active {
+  display: flex;
+} */
+
+.nav__list-open .nav__list {
+  display: flex;
+  background-color: var(--clr--bgc1-footer);
+}
+
+.nav__list-open .nav{
+  background-color: var(--clr--bgc1-footer);
+}
+
+.nav__list-ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.nav__item {
+  list-style: none;
+  text-align: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color:rgba(255,255,255,.75);
+  padding: 1.2rem 1.6rem;
+  display: block;
+}
+
+.nav__link:hover {
+  color: rgba(255,255,255,1);
+  background: #1b002c;
+}
+
+@media (min-width: 800px) {
+  .nav {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .toggle-button {
+      display: none;
+  }
+
+  .nav__list {
+      display: inline;
+  }
+
+  .nav__list-open .nav__list {
+    background-color: transparent;
+  }
+
+  .nav__list-ul {
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .nav__link:hover {
+      background: transparent;
+  }
+}
+
+/* Home Section */
+
+.home {
+  background-image: url(/img/ladybannerx2\ 1.png);
+  width: 100%;
+  height: 650px;
+  background-color: #4e2e4c8a;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__description {
+  color: var(--clr-title);
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.home__description p {
+  font-size: 4rem;
+  margin: 20px 20px;
+}
+
+.home__btn-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__btn {
+  color: var(--clr-title);
+  padding: 1.2em 2em;
+  background-color: var(--clr-footer2);
+  border-radius: 50px;
+  width: 227px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 200ms ease-in-out;
+}
+
+.home__btn:nth-child(2) {
+  margin-top: 1em;
+}
+
+.home__btn:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 1200px) {
+.home__description {
+  width: 50%;
+}
+
+.home__description p {
+   font-size: 5.6rem;
+}
+
+.home__btn-container {
+  align-items: flex-end;
+  margin-right: 20px;
+}
+}
 
 /* Cards section */
 .cards{
