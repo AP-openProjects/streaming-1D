@@ -152,7 +152,7 @@ body{
     height: 100%;
     background: var(--clr--bgc1-footer);
     z-index: -1;
-    transform: skewY(15deg);
+    transform: skewY(13deg);
     transform-origin: top right;
   }
 
