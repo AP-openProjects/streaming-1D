@@ -339,7 +339,7 @@ body {
   background-color: var(--clr-footer2);
 }
 /* Lineas separadoras del background */
-.bottom__separator-line-1 {
+/* .bottom__separator-line-1 {
     position: absolute;
     top: 40%;
     bottom: 0;
@@ -365,7 +365,7 @@ body {
       z-index: -2;
       transform: skewY(0deg);
       transform-origin: top right;
-  }
+  } */
   /* .linea__separadora-fondo3 {
     position: absolute;
     top:200%;
