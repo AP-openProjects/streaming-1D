@@ -2,58 +2,59 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataformas de Streaming</title>
-    <!-- CSS style sheet -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataformas de Streaming</title>
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header>
-        <nav class="nav" id="navbar">
-          <!-- Logo -->
-            <div class="nav__logo">
-                <a href="#home"><img src="img/LOGO.png" alt="Logo" id="logo"></a>
-            </div>
-            <!-- Burger -->
-            <button class="toggle-button" aria-label="toggle navigation">
-              <span class="toggle-button__bar"></span>
-              <span class="toggle-button__bar"></span>
-              <span class="toggle-button__bar"></span>
-            </button>
-            <!-- Nav items -->
-            <div class="nav__list">
-              <ul class="nav__list-ul">
-                  <li class="nav__item">
-                      <a href="#home" class="nav__link">Home</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="#cards" class="nav__link">Cards</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="#description" class="nav__link">Description</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="#contact" class="nav__link">Contact</a>
-                  </li>
-              </ul>
-            </div>
-        </nav>
+    <nav class="nav" id="navbar">
+      <!-- Logo -->
+      <div class="nav__logo">
+        <a href="#home"><img src="img/LOGO.png" alt="Logo" id="logo"></a>
+      </div>
+      <!-- Burger -->
+      <button class="toggle-button" aria-label="toggle navigation">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+      <!-- Nav items -->
+      <div class="nav__list">
+        <ul class="nav__list-ul">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#cards" class="nav__link">Cards</a>
+          </li>
+          <li class="nav__item">
+            <a href="#description" class="nav__link">Description</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
-<main>
-      <!-- Home -->
+  <main>
+    <!-- Home -->
     <section class="home" id="home">
-        <div class="home__description">
-            <p>¡Te ayudamos a elegir el servicio que mejor se adapte a vos!</p>
-        </div>
-        <div class="home__btn-container">
-            <a href="#cards" class="btn home__btn">News</a>
-            <a href="#cards" class="btn home__btn">Blog</a>
-        </div>
+      <div class="home__description">
+        <p>¡Te ayudamos a elegir el servicio que mejor se adapte a vos!</p>
+      </div>
+      <div class="home__btn-container">
+        <a href="#cards" class="btn home__btn">News</a>
+        <a href="#cards" class="btn home__btn">Blog</a>
+      </div>
     </section>
     <!-- Cards with streaming services information -->
+    <h1 class="title__principal">SERVICIOS DE STREAMING</h1>
     <section class="cards" id="cards">
       <div class="card">
         <div id="netflix" class="card__inner">
@@ -68,12 +69,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Netflix</h2>
-            <p>Contenido: Series y peliculas</p>
-            <p>Contenido original: Si</p>
-            <p>Valor: Desde 13,99us$s por mes</p>
-            <p>TV en vivo: No</p>
-            <p>Lanzamiento: 1997</p>
+            <div class="card__back__head">
+              <h2>Netflix</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series y peliculas</p>
+              <p>Contenido original: Si</p>
+              <p>Valor: Desde 13,99us$s por mes</p>
+              <p>TV en vivo: No</p>
+              <p>Lanzamiento: 1997</p>
+              <div id="netflix__btn__back" class="card__back__btn">
+                <p>Back</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -90,12 +98,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Hulu</h2>
-            <p>Contenido: Series, peliculas y TV</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: Pago extra</p>
-            <p>Valor: Desde 5,99us$s por mes</p>
-            <p>Lanzamiento: 2007</p>
+            <div class="card__back__head">
+              <h2>Hulu</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series, peliculas y TV</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: Pago extra</p>
+              <p>Valor: Desde 5,99us$s por mes</p>
+              <p>Lanzamiento: 2007</p>
+            </div>
+            <div id="hulu__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -112,12 +127,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Youtube</h2>
-            <p>Contenido: Series, peliculas y vlogs</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: No</p>
-            <p>Valor: Desde 11,99us$s por mes</p>
-            <p>Lanzamiento: 2005</p>
+            <div class="card__back__head">
+              <h2>Youtube</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series, peliculas y vlogs</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: No</p>
+              <p>Valor: Desde 11,99us$s por mes</p>
+              <p>Lanzamiento: 2005</p>
+            </div>
+            <div id="youtube__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -134,12 +156,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Disney+</h2>
-            <p>Contenido: Series y peliculas</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: No</p>
-            <p>Valor: Desde 7,99us$s por mes</p>
-            <p>Lanzamiento: 2019</p>
+            <div class="card__back__head">
+              <h2>Disney+</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series y peliculas</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: No</p>
+              <p>Valor: Desde 7,99us$s por mes</p>
+              <p>Lanzamiento: 2019</p>
+            </div>
+            <div id="disney__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -156,12 +185,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Apple TV</h2>
-            <p>Contenido: Series y peliculas</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: No</p>
-            <p>Valor: Desde 4,99us$s por mes</p>
-            <p>Lanzamiento: 2007</p>
+            <div class="card__back__head">
+              <h2>Apple TV</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series y peliculas</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: No</p>
+              <p>Valor: Desde 4,99us$s por mes</p>
+              <p>Lanzamiento: 2007</p>
+            </div>
+            <div id="apple__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -178,12 +214,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Vudu</h2>
-            <p>Contenido: Peliculas</p>
-            <p>Contenido original: No</p>
-            <p>TV en vivo: No</p>
-            <p>Valor: Desde 4,99us$s por alquiler</p>
-            <p>Lanzamiento: 2019</p>
+            <div class="card__back__head">
+              <h2>Vudu</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Peliculas</p>
+              <p>Contenido original: No</p>
+              <p>TV en vivo: No</p>
+              <p>Valor: Desde 4,99us$s por alquiler</p>
+              <p>Lanzamiento: 2019</p>
+            </div>
+            <div id="vudu__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -200,12 +243,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>HBO Now</h2>
-            <p>Contenido: Series y peliculas</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: No</p>
-            <p>Valor: Desde 14,99us$s por mes</p>
-            <p>Lanzamiento: 1997</p>
+            <div class="card__back__head">
+              <h2>HBO Now</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series y peliculas</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: No</p>
+              <p>Valor: Desde 14,99us$s por mes</p>
+              <p>Lanzamiento: 1997</p>
+            </div>
+            <div id="hbo__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -222,12 +272,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Crackle</h2>
-            <p>Contenido: Series, peliculas y TV</p>
-            <p>Contenido original: No</p>
-            <p>TV en vivo: Si</p>
-            <p>Valor: Gratis</p>
-            <p>Lanzamiento: 2007</p>
+            <div class="card__back__head">
+              <h2>Crackle</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series, peliculas y TV</p>
+              <p>Contenido original: No</p>
+              <p>TV en vivo: Si</p>
+              <p>Valor: Gratis</p>
+              <p>Lanzamiento: 2007</p>
+            </div>
+            <div id="crackle__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -244,12 +301,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>CBS All Access</h2>
-            <p>Contenido: TV</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: Si</p>
-            <p>Valor: Desde 5,99us$s</p>
-            <p>Lanzamiento: 2014</p>
+            <div class="card__back__head">
+              <h2>CBS All Access</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: TV</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: Si</p>
+              <p>Valor: Desde 5,99us$s</p>
+              <p>Lanzamiento: 2014</p>
+            </div>
+            <div id="cbs__btn__back" class="card__back__btn">
+              <p>Back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -266,12 +330,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Sling Television</h2>
-            <p>Contenido: TV</p>
-            <p>Contenido original: No</p>
-            <p>TV en vivo: Si</p>
-            <p>Valor: Desde 29,99us$s</p>
-            <p>Lanzamiento: 2015</p>
+            <div class="card__back__head">
+              <h2>Sling Television</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: TV</p>
+              <p>Contenido original: No</p>
+              <p>TV en vivo: Si</p>
+              <p>Valor: Desde 29,99us$s</p>
+              <p>Lanzamiento: 2015</p>
+              <div id="sling__btn__back" class="card__back__btn">
+                <p>Back</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -288,12 +359,19 @@
             </div>
           </div>
           <div class="card__back">
-            <h2>Amazon</h2>
-            <p>Contenido: Series y peliculas</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: No</p>
-            <p>Valor: Desde 12,99us$s</p>
-            <p>Lanzamiento: 2006</p>
+            <div class="card__back__head">
+              <h2>Amazon</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Series y peliculas</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: No</p>
+              <p>Valor: Desde 12,99us$s</p>
+              <p>Lanzamiento: 2006</p>
+              <div id="prime__btn__back" class="card__back__btn">
+                <p>Back</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -303,125 +381,140 @@
             <div class="card__front__img">
               <img src="img/fubo.png" alt="Fubo">
             </div>
-              <p>Fubo</p>
-              <p>★★★★</p>
-              <div id="fubo__btn" class="card__front__btn">
-                <p>Info</p>
-              </div>
+            <p>Fubo</p>
+            <p>★★★★</p>
+            <div id="fubo__btn" class="card__front__btn">
+              <p>Info</p>
+            </div>
           </div>
           <div class="card__back">
-            <h2>Fubo</h2>
-            <p>Contenido: Deportes</p>
-            <p>Contenido original: Si</p>
-            <p>TV en vivo: Si</p>
-            <p>Valor: Desde 59,99us$s</p>
-            <p>Lanzamiento: 2015</p>
+            <div class="card__back__head">
+              <h2>Fubo</h2>
+            </div>
+            <div class="card__back__body">
+              <p>Contenido: Deportes</p>
+              <p>Contenido original: Si</p>
+              <p>TV en vivo: Si</p>
+              <p>Valor: Desde 59,99us$s</p>
+              <p>Lanzamiento: 2015</p>
+              <div id="fubo__btn__back" class="card__back__btn">
+                <p>Back</p>
+              </div>
+            </div>
           </div>
         </div>
-       </div>
-     </section>
-<section>
+      </div>
+    </section>
+    <section>
       <div class="linea__separadora-fondo1">
       </div>
       <div class="linea__separadora-fondo2">
-  </div>
+      </div>
     </section>
     <section class="description__profiles" id="description">
-        <div class="imagen__separadora-secciones"><img src="img/flecha-hacia-abajo.svg" alt="flecha__abajo"></div>
-        <h1 class="title__principal">QUIENES SOMOS</h1>
-        <h2 class="title__cards">Integrantes</h2>
-        <div class="container__profiles">
-            <div class="card__profile desalineacion__1">
-                <img class="forma__redonda-imagen" src="https://avatars1.githubusercontent.com/u/69174619?s=400&v=4" alt="Martin">
-                <h2 class="nombre__gradiente-1">Martin Doello</h2>
-                <p>Mi nombre es Martin Doello, tengo conocimientos básicos sobre: ​​HTML, CSS, Javascript (en proceso de aprendizaje).Mi plataforma favorita es Disney Plus y mi pasatiempo son los videojuegos y comer asados ​​al sol.</p>
-                <div class="cinta__gradiente-1">Desarrollo Web</div>
-            </div>
-            <div class="card__profile">
-                <img class="forma__redonda-imagen" src="https://avatars2.githubusercontent.com/u/66553007?s=400&v=4" alt="Junior">
-                <h2 class="nombre__gradiente-2">Junior Vitteri</h2>
-                <p> Mi nombre es Junior Vitteri, estoy aprendiendo sobre desarrollo web.
-                  ¡Me gusta jugar al fútbol y ver Netflix por la noche!</p>
-                <div class="cinta__gradiente-2">Desarrollo Web</div>
-            </div>
-            <div class="card__profile desalineacion__2">
-                <img class="forma__redonda-imagen" src="https://avatars3.githubusercontent.com/u/70081319?s=400&v=4" alt="Javier Diaz">
-                <h2 class="nombre__gradiente-3">Javier Diaz</h2>
-                <p>Estudiante - Tengo conocimientos básicos de HTML, CSS, JAVASCRIPT y C ++.
-                  Mi plataforma de transmisión favorita es Spotify, ya que me gusta escuchar música todo el tiempo.
-                  Soy un practicante de jiu-jitsu japonés.</p>
-                <div class="cinta__gradiente-3">Desarrollo Web</div>
-            </div>
-            <div class="card__profile">
-                <img class="forma__redonda-imagen" src="https://avatars3.githubusercontent.com/u/74612409?s=400&v=4" alt="Gonzalo Lamas">
-                <h2 class="nombre__gradiente-4">Gonzalo Lamas</h2>
-                <p>Mi nombre es Gonzalo Llamas, me gusta aprender constantemente sobre la web. Mi plataforma preferida de streaming es Twitch, y me gustan los videojuegos de fútbol.</p>
-                <div class="cinta__gradiente-4">Desarrollo Web</div>
-            </div>
+      <div class="imagen__separadora-secciones"><img src="img/flecha-hacia-abajo.svg" alt="flecha__abajo"></div>
+      <h1 class="title__principal">QUIENES SOMOS</h1>
+      <h2 class="title__cards">Integrantes</h2>
+      <div class="container__profiles">
+        <div class="card__profile desalineacion__1">
+          <img class="forma__redonda-imagen" src="https://avatars1.githubusercontent.com/u/69174619?s=400&v=4"
+            alt="Martin">
+          <h2 class="nombre__gradiente-1">Martin Doello</h2>
+          <p>Mi nombre es Martin Doello, tengo conocimientos básicos sobre: ​​HTML, CSS, Javascript (en proceso de
+            aprendizaje).Mi plataforma favorita es Disney Plus y mi pasatiempo son los videojuegos y comer asados ​​al
+            sol.</p>
+          <div class="cinta__gradiente-1">Desarrollo Web</div>
         </div>
-        <div class="second__section-tecnologics">
-            <h2>Tecnologias Usadas</h2>
+        <div class="card__profile">
+          <img class="forma__redonda-imagen" src="https://avatars2.githubusercontent.com/u/66553007?s=400&v=4"
+            alt="Junior">
+          <h2 class="nombre__gradiente-2">Junior Vitteri</h2>
+          <p> Mi nombre es Junior Vitteri, estoy aprendiendo sobre desarrollo web.
+            ¡Me gusta jugar al fútbol y ver Netflix por la noche!</p>
+          <div class="cinta__gradiente-2">Desarrollo Web</div>
+        </div>
+        <div class="card__profile desalineacion__2">
+          <img class="forma__redonda-imagen" src="https://avatars3.githubusercontent.com/u/70081319?s=400&v=4"
+            alt="Javier Diaz">
+          <h2 class="nombre__gradiente-3">Javier Diaz</h2>
+          <p>Estudiante - Tengo conocimientos básicos de HTML, CSS, JAVASCRIPT y C ++.
+            Mi plataforma de transmisión favorita es Spotify, ya que me gusta escuchar música todo el tiempo.
+            Soy un practicante de jiu-jitsu japonés.</p>
+          <div class="cinta__gradiente-3">Desarrollo Web</div>
+        </div>
+        <div class="card__profile">
+          <img class="forma__redonda-imagen" src="https://avatars3.githubusercontent.com/u/74612409?s=400&v=4"
+            alt="Gonzalo Lamas">
+          <h2 class="nombre__gradiente-4">Gonzalo Lamas</h2>
+          <p>Mi nombre es Gonzalo Llamas, me gusta aprender constantemente sobre la web. Mi plataforma preferida de
+            streaming es Twitch, y me gustan los videojuegos de fútbol.</p>
+          <div class="cinta__gradiente-4">Desarrollo Web</div>
+        </div>
+      </div>
+      <div class="second__section-tecnologics">
+        <h2>Tecnologias Usadas</h2>
         <div class="iconos__resolucion">
           <img src="img/html.svg" alt="html">
           <img src="img/css.svg" alt="css">
           <img src="img/js.svg" alt="js">
         </div>
-        </div>
+      </div>
 
-        <div class="third__section-resources">
+      <div class="third__section-resources">
         <div>
-            <h2>Recursos</h2>
+          <h2>Recursos</h2>
         </div>
         <div class="links__diseño">
           <p><a href="https://draw.io.com" target="_blank">https://draw.io.com/</a> <span>Diseño base</span></p>
           <br>
-          <p><a href="https://www.figma.com" target="_blank">https://www.figma.com/</a> <span>Diseño de interface</span></p>
-          <br> 
+          <p><a href="https://www.figma.com" target="_blank">https://www.figma.com/</a> <span>Diseño de interface</span>
+          </p>
+          <br>
           <p><a href="https://www.flaticon.com" target="_blank">https://www.flaticon.com/</a> <span>Iconos</span></p>
           <br>
           <p><a href="https://coolors.co" target="_blank">https://coolors.co/</a> <span>Paleta de colores</span></p>
         </div>
-        </div>
-        <section>
+      </div>
+      <section>
         <div class="linea__separadora-fondo3"></div>
         <div class="linea__separadora-fondo4"></div>
       </section>
-      
+
     </section>
-    </main>
-    <footer>
-        <section class="footer__contact" id="contact">
+  </main>
+  <footer>
+    <section class="footer__contact" id="contact">
 
-            <div class="footer__team">
-                <p>Pagina desarrollada por: <em>Streaming Team</em>.</p>
-            </div>
+      <div class="footer__team">
+        <p>Pagina desarrollada por: <em>Streaming Team</em>.</p>
+      </div>
 
-            <div class="footer__contact-container">
-                <ul class="footer__contact-list">
-                    <li><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://discord.com/"><i class="fab fa-discord"></i></a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="footer__copy">
-            <p>
-                COPYRIGHT © 2020. ALL RIGHTS RESERVED. STREAMINGTEAM TEMPLATE BY STREAMINGTEAM
-            </p>
-            <div>
-                <ul>
-                    <li><a href="#">PRESS</a></li>
-                    <li><a href="#">TERMS</a></li>
-                    <li><a href="#">PRIVACY</a></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+      <div class="footer__contact-container">
+        <ul class="footer__contact-list">
+          <li><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://discord.com/"><i class="fab fa-discord"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="footer__copy">
+      <p>
+        COPYRIGHT © 2020. ALL RIGHTS RESERVED. STREAMINGTEAM TEMPLATE BY STREAMINGTEAM
+      </p>
+      <div>
+        <ul>
+          <li><a href="#">PRESS</a></li>
+          <li><a href="#">TERMS</a></li>
+          <li><a href="#">PRIVACY</a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 
-      <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
-      <script src="/js/navscript.js"></script>
-      <script src="/js/slide.js"></script>
-      <script src="/js/flipcard.js"></script>
+  <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
+  <script src="/js/navscript.js"></script>
+  <script src="/js/flipcard.js"></script>
 </body>
+
 </html>
