@@ -247,9 +247,9 @@ h2 {
     row-gap: 50px;
   }
 
-  @media (min-width: 600px) {
+  @media (max-width: 420px) {
     .cards {
-      grid-auto-rows: minmax(300px, 1fr);
+      margin: 0 auto;
     }
   }
   
