@@ -237,9 +237,7 @@ h2 {
 }
 
 /* Cards section */
-
 .cards{
-    /* max-width: 1280px; */
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-content: center;
@@ -258,9 +256,7 @@ h2 {
       width: 185px;
       height: 315px;
       border-radius: 10px;
-      /* float: left; */
       margin-top: 20px;
-      /* margin-left: 20px; */
       perspective: 1000px; 
       align-self: center;
       justify-self: center;
@@ -276,6 +272,8 @@ h2 {
       transform-style: preserve-3d;
     }
     
+
+    /* Flip animation */
     .flip {
       transform: rotateY(180deg);
     }
@@ -298,6 +296,8 @@ h2 {
     } 
     
     .card__front__img{
+        display: flex;
+        align-items: center; 
         background: rgb(79,1,71);
         background: linear-gradient(180deg, rgba(79,1,71,1) 0%, rgba(17,0,28,1) 100%);
         box-shadow: 4px 4px 10px black inset;
@@ -308,12 +308,14 @@ h2 {
     }
 
     .card__front__img img{
-        margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .card__front :nth-child(2){
         margin-top: 20px;
-        font-size: 4rem;
+        font-size: 3.5rem;
+        font-weight: bold;
     }
 
     .card__front :nth-child(3){
@@ -324,21 +326,25 @@ h2 {
     .card__front__btn{
         position: absolute;
         left: 100px;
-        top: 270px;
+        top: 280px;
         background-color: #3A015C;
         width: 65px;
         height: 25px;
-        color: white;
-        font-size: 1.5rem;
         border-radius: 12px;
-        text-align: center;
-        line-height: 25px;
+        line-height: 27px;
         box-shadow: 0px 2px 4px white inset, 0px 2px 2px grey;
         cursor:pointer;
     }
 
+    .card__front__btn p{
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      cursor:pointer;
+    }
+
     .card__front__btn:hover{
-      box-shadow: 0 0 10px 0 #3A015C inset, 0 0 5px 2px #3A015C;
+      box-shadow: 0px 0px 5px 2px #3A015C;
     }
     
     .card__front__btn:active{
@@ -349,22 +355,76 @@ h2 {
     /* Style the back side */
     .card__back {
       box-sizing: border-box;
-      padding: 10px 15px 0px 15px;
       background: rgb(79,1,71);
       background: linear-gradient(180deg, rgba(79,1,71,1) 0%, rgba(17,0,28,1) 100%);
-      color: white;
       border-radius: 10px;
       transform: rotateY(180deg);
-      text-align: left;
+    }
+
+    .card__back__head {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 185px;
+      height: 80px; 
+      display: flex;
+      align-items: center;    
+      background-color: white;
+      box-shadow: -3px -3px 10px gray inset;
+      border-radius: 10px 10px 0px 0px;
     }
 
     .card__back h2{
-        text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
     }
 
-    .card__back p{
-        font-size: large;
-        margin-top: 8px;
+    .card__back__body {
+      position: absolute;
+      top: 80px;
+      height: 235px;
+      border: 1px solid #4F0147;
+      border-radius: 0px 0px 10px 10px;
+    }
+
+    .card__back__body p{
+        color: white;
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .card__back__btn {
+      position: absolute;
+      bottom: 15px;
+      left: 100px;
+      width: 65px;
+      height: 20px;
+      background-color: white;    
+      border-radius: 12px;
+      line-height: 22px;
+      box-shadow: 0px 2px 4px black inset;
+      cursor:pointer;
+    }
+
+    .card__back__btn:hover{
+      box-shadow: 0 0 10px 0 #3A015C inset, 0 0 3px 2px white;
+    }
+    
+    .card__back__btn:active{
+      background-color: #350853;
+      box-shadow: 0px 3px 5px gray inset;
+    }
+
+    .card__back__btn p{
+      margin: 0px auto;
+      text-align: center;
+      font-size: 1.5rem;  
+      color: black;
+      cursor:pointer;
+      font-weight: bold;
     }
 
 /* Description section */
