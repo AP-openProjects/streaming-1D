@@ -634,7 +634,7 @@ body {
 }
 .card__profile {
   width: 950px;
-  height: 330px;
+  height: 320px;
   margin: 20px;
   border-radius: 10px;
   background: #fff;
@@ -713,27 +713,28 @@ body {
   color: var(--clr-title);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 800px) {
   .container__profiles {
     display: flex;
     flex-direction: column;
-    height: 1280px;
-    margin: 20px 0px;
+    height: 1380px;
+    margin: 20px 150px;
+    width: 200px;
   }
   .card__profile{
-    height: 250px;
+    height: 350px;
     width: 400px;
     margin: 50px 0px;
   }
   .container__profiles .card__misalignment-1{
     position: relative;
-    left: 20px;
+    right: 50px;
     bottom: 0;
   }
   
   .container__profiles .card__misalignment-2{
     position: relative;
-    left: 20px;
+    right: 50px;
     bottom: 0;
   }
   .card__profile .round__design-image{
@@ -741,7 +742,7 @@ body {
     height: 100px;
     border-radius: 50%;
     position: relative;
-    left: 150px;
+    left: 130px;
     bottom: 40px;
   }
   .second__section-tecnologics h2{
