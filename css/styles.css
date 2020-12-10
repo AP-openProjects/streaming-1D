@@ -383,6 +383,7 @@ h2 {
     .card__back__body {
       position: absolute;
       top: 80px;
+      width: 185px;
       height: 235px;
       border: 1px solid #4F0147;
       border-radius: 0px 0px 10px 10px;
