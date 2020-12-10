@@ -35,8 +35,6 @@ const fuboBtn = document.querySelector("#fubo__btn");
 const fuboBtnBack = document.querySelector("#fubo__btn__back");
 const fuboCard = document.querySelector("#fubo");
 
-console.log(slingCard);
-
 
 // flip card functions
 netflixBtn.addEventListener("click", function(){
