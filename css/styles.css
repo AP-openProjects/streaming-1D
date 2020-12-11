@@ -11,6 +11,9 @@
   --fs-h2: 3.25rem;
 }
 /* General styles */
+body {
+  background-color: var(--clr-footer2);
+}
 
 /* Buttons */
 
@@ -476,98 +479,91 @@ main {
     }
 
 /* Description section */
-body {
-  background: #AA076B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- }
-/* Lineas separadoras del background */
-/* .bottom__separator-line-1 {
-    position: absolute;
-    top: 40%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--clr--bgc1-footer);
-    z-index: -1;
-    transform: skewY(13deg);
-    transform-origin: top right;
-  }
 
-  .bottom__separator-line-2{
-      position: absolute;
-      top: 0;
-      bottom: 50%;
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--clr--bgc1-footer);
-      z-index: -2;
-      transform: skewY(0deg);
-      transform-origin: top right;
-  } */
-  /* .linea__separadora-fondo3 {
-    position: absolute;
-    top:200%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--clr-bgc3);
-    z-index: -1;
-    transform: skewY(-25deg);
-    transform-origin: top right;
-  } */
-
-  /* .linea__separadora-fondo4 {
-    position: absolute;
-    top: 120%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--clr-bgc3);
-    z-index: -2;
-    transform: skewY(0deg);
-    transform-origin: top right;
-  } */
- /* Diseño titulo cartas perfiles */
  .title__principal{
-  margin: 40px 5px;
+  margin: 50px auto;
+  padding-top: 50px;
   text-align: center;
   color: var(--clr-title);
 }
 .title__cards {
-  margin: 70px auto;
-  text-align: left;
+  margin: 50px auto;
+  padding-bottom: 50px;
+  text-align: center;
   color: var(--clr-title);
 }
-/* contenedor de las cartas con su respectivo tamaño */
+
+/* Profile cards - general styles*/
+
 .container__profiles {
-  width: 1440px;
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
+  margin: 75px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 30px;
+  row-gap: 80px;
 }
 
-/* diseño para cada unas de las cartas */
-.container__profiles .card__profile .gradient__name-1{
+.card__profile {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+.card__profile h2 {
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+
+.card__profile p {
+  height: 45%;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 1.4rem;
+  text-align: center;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+.round__design-image{
+  height: 30%;
+  border-radius: 100%;
+  position: relative;
+  bottom: 30px;
+  border: 2px solid white;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+.card__misalignment {
+  position: relative;
+  bottom: 40px;
+}
+
+/* First profile */
+.gradient__name-1 {
   text-align: center;
   background: -webkit-linear-gradient(#f12711, #f5af19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f12711;
-  display: block;
-  margin-left: 19px;
 }
-/* aplicando gradiente a la cinta de la parte inferior y al nombre de las cartas */
-.container__profiles .card__profile .gradient__ribbon-1{
-  display: block;
+
+.gradient__ribbon-1 {
+  width: 100%;
   font-size: 16px;
   background: rgb(241, 39, 17);
   background: radial-gradient(
@@ -577,17 +573,19 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
   );
   text-align: center;
 }
-.container__profiles .card__profile .gradient__name-2{
+
+/* Second profile */
+
+.gradient__name-2 {
   text-align: center;
   background: -webkit-linear-gradient(#12c2e9, #c471ed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #12c2e9;
-  display: block;
-  margin-left: 19px;
 }
-.container__profiles .card__profile .gradient__ribbon-2{
-  display: block;
+.gradient__ribbon-2 {
+  /* display: block; */
+  width: 100%;
   font-size: 16px;
   background: rgb(18, 194, 233);
   background: radial-gradient(
@@ -596,20 +594,20 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
     rgba(196, 113, 237, 1) 100%
   );
   text-align: center;
-  position: relative;
-  top: 44px;
 }
-.container__profiles .card__profile .gradient__name-3{
+
+/* Third profile */
+
+.gradient__name-3{
   text-align: center;
   background: -webkit-linear-gradient(#1f4037, #99f2c8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #1f4037;
-  display: block;
-  margin-left: 19px;
  }
-.container__profiles .card__profile .gradient__ribbon-3{
-  display: block;
+.gradient__ribbon-3{
+  /* display: block; */
+  width: 100%;
   font-size: 16px;
   background: rgb(31, 64, 55);
   background: radial-gradient(
@@ -619,18 +617,19 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
   );
   text-align: center;
  }
-.container__profiles .card__profile .gradient__name-4{
+
+ /* Fourth profile */
+
+ .gradient__name-4{
   text-align: center;
   background: -webkit-linear-gradient(#c31432, #240b36);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #c31432;
-  display: block;
-  margin-left: 19px;
 }
 
-.container__profiles .card__profile .gradient__ribbon-4{
-  display: block;
+.gradient__ribbon-4{
+  width: 100%;
   font-size: 16px;
   background: rgb(195, 20, 50);
   background: radial-gradient(
@@ -639,50 +638,32 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
     rgba(36, 11, 54, 1) 100%
   );
   text-align: center;
-  position: relative;
-  top: 20px;
-}
-.card__profile {
-  width: 950px;
-  height: 360px;
-  margin: 10px;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default;
-}
-/* alineaciones de las cartas y posicionamiento para las mismas */
-.card__profile .round__design-image{
-  width: 50%;
-  height: 100px;
-  border-radius: 50%;
-  position: relative;
-  left: 60px;
-  bottom: 30px;
 }
 
-.container__profiles .card__misalignment-1{
-  position: relative;
-  bottom: 40px;
-}
+@media (max-width: 1350px) and (min-width:800px){
+  .card__misalignment{
+    bottom: 0px;
+  }
 
-.container__profiles .card__misalignment-2{
-  position: relative;
-  bottom: 40px;
-}
+  .container__profiles {
+    grid-template-columns: 1fr 1fr;
+  }
+ }
+  @media (max-width: 800px) {
+    .card__misalignment{
+      bottom: 0px;
+    }
+    .container__profiles {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
 
-.container__profiles .card__profile h2 {
-  margin-bottom: 10px;
-  color: #7a7a7a;
-}
-.container__profiles .card__profile p {
-  line-height: 1.8;
-  color: #6a6a6a;
-  font-size: 16px;
-  margin-bottom: 5px;
-  text-align: center;
-}
+  @media (min-width: 1600px) {
+    .container__profiles {
+      margin: auto 100px;
+    }
+  }
+/* Technologies section*/
 
 .second__section-tecnologics {
   margin: 50px 0px;
@@ -691,6 +672,8 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
 
 .second__section-tecnologics h2 {
   margin: 40px auto;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .second__section-tecnologics .resolution__icons{
@@ -710,8 +693,9 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
 .third__section-resources h2 {
   color: var(--clr-title);
   margin: 40px auto;
+  text-align: center;
 }
-/* aplicando diseños para los links */
+/* applying design for links */
 .third__section-resources .links__design{
   font-size: 2rem;
   text-align: center;
@@ -724,63 +708,16 @@ background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, F
 }
 
 @media (max-width: 800px) {
-  .container__profiles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 1600px;
-    margin: 20px 0px;
-    width: 0px;
-  }
-  .card__profile{
-    height: 450px;
-    width: 300px;
-    margin: 50px 150px;
-  }
-  .card__profile .round__design-image{
-    width: 40%;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    left: 110px;
-    bottom: 40px;
-  }
-  .container__profiles .card__profile .gradient__ribbon-2{
-    display: block;
-    font-size: 16px;
-    background: rgb(18, 194, 233);
-    background: radial-gradient(
-      circle,
-      rgba(18, 194, 233, 1) 0%,
-      rgba(196, 113, 237, 1) 100%
-    );
-    text-align: center;
-    position: relative;
-    top: 4px;
-  }
-  .container__profiles .card__profile .gradient__ribbon-4{
-    display: block;
-    font-size: 16px;
-    background: rgb(195, 20, 50);
-    background: radial-gradient(
-      circle,
-      rgba(195, 20, 50, 1) 0%,
-      rgba(36, 11, 54, 1) 100%
-    );
-    text-align: center;
-    position: relative;
-    top: 4px;
-  }
-  .second__section-tecnologics h2{
+.second__section-tecnologics h2{
     margin: 70px 0px;
   }
-  .second__section-tecnologics .resolution__icons{
+.second__section-tecnologics .resolution__icons{
     text-align: center;
   }
   
-  .second__section-tecnologics .resolution__icons img{
-    width:20%; 
-    height:20%;
+.second__section-tecnologics .resolution__icons img{
+    width:25%; 
+    height:25%;
     display: inline; 
   }
 }
