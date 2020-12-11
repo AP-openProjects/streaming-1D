@@ -495,13 +495,13 @@ main {
 } */
 
 .container__profiles {
-  border: 2px solid red;
   /* width: 100%; */
   margin: 75px 20px;
   /* display: flex; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 80px;
   /* max-width: 1200px; */
   /* margin: auto 60px; */
 }
@@ -651,9 +651,22 @@ main {
   bottom: 20px;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1350px) and (min-width:800px){
   .card__misalignment{
     bottom: 0px;
+  }
+
+  .container__profiles {
+    grid-template-columns: 1fr 1fr;
+  }
+ }
+  @media (max-width: 800px) {
+    .card__misalignment{
+      bottom: 0px;
+    }
+    .container__profiles {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
   }
 
   /*
@@ -681,7 +694,6 @@ main {
     left: 130px;
     bottom: 40px; 
   }*/
-}
 
 /* Technologies section*/
 
