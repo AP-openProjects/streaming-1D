@@ -579,7 +579,6 @@ main {
   color: #12c2e9;
 }
 .gradient__ribbon-2 {
-  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(18, 194, 233);
@@ -601,7 +600,6 @@ main {
   color: #1f4037;
  }
 .gradient__ribbon-3{
-  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(31, 64, 55);
