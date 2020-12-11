@@ -12,7 +12,15 @@
 }
 /* General styles */
 body {
-  background-color: var(--clr-footer2);
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
 }
 
 /* Buttons */
@@ -491,7 +499,7 @@ main {
 /* Profile cards - general styles*/
 
 .container__profiles {
-  margin: 75px 20px;
+  margin: 35px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 30px;
@@ -659,12 +667,12 @@ main {
 /* Technologies section*/
 
 .second__section-tecnologics {
-  margin: 50px 0px;
+  margin: 20px 0px;
   color: var(--clr-title);
 }
 
 .second__section-tecnologics h2 {
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
   padding-top: 80px;
 }
