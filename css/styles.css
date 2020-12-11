@@ -12,7 +12,7 @@
 }
 /* General styles */
 body {
-  background: #ad5389;  /* fallback for old browsers */
+background: #ad5389;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }
@@ -509,15 +509,11 @@ main {
 }
 
 .container__profiles {
-  /* width: 100%; */
   margin: 75px 20px;
-  /* display: flex; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 30px;
   row-gap: 80px;
-  /* max-width: 1200px; */
-  /* margin: auto 60px; */
 }
 
 .card__profile {
@@ -540,7 +536,6 @@ main {
 }
 
 .card__profile h2 {
-  /* margin: 10px; */
   margin-bottom: 15px;
   color: #7a7a7a;
 }
@@ -551,18 +546,15 @@ main {
   line-height: 1.8;
   color: #6a6a6a;
   font-size: 1.4rem;
-  /* margin-bottom: 5px; */
   text-align: center;
   box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
   0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 .round__design-image{
-  /* width: auto; */
   height: 30%;
   border-radius: 100%;
   position: relative;
-  /* left: 75px; */
   bottom: 30px;
   border: 2px solid white;
   box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -581,12 +573,9 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f12711;
-  /* display: block;
-  margin-left: 19px; */
 }
 
 .gradient__ribbon-1 {
-  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(241, 39, 17);
@@ -596,8 +585,6 @@ main {
     rgba(245, 175, 25, 1) 100%
   );
   text-align: center;
-  /* position: relative;
-  bottom: 0px; */
 }
 
 /* Second profile */
@@ -608,11 +595,8 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #12c2e9;
-  /* display: block;
-  margin-left: 19px; */
 }
 .gradient__ribbon-2 {
-  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(18, 194, 233);
@@ -622,8 +606,6 @@ main {
     rgba(196, 113, 237, 1) 100%
   );
   text-align: center;
-  /* position: relative;
-  bottom: 0px; */
 }
 
 /* Third profile */
@@ -634,11 +616,8 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #1f4037;
-  /* display: block;
-  margin-left: 19px; */
  }
 .gradient__ribbon-3{
-  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(31, 64, 55);
@@ -648,8 +627,6 @@ main {
     rgba(153, 242, 200, 1) 100%
   );
   text-align: center;
-  /* position: relative;
-  bottom: 20px; */
  }
 
  /* Fourth profile */
@@ -660,12 +637,9 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #c31432;
-  /* display: block; */
-  /* margin-left: 19px; */
 }
 
 .gradient__ribbon-4{
-  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(195, 20, 50);
@@ -675,8 +649,6 @@ main {
     rgba(36, 11, 54, 1) 100%
   );
   text-align: center;
-  /* position: relative;
-  bottom: 20px; */
 }
 
 @media (max-width: 1350px) and (min-width:800px){
@@ -702,33 +674,6 @@ main {
       margin: auto 100px;
     }
   }
-
-  /*
-  .card__profile{
-    height: 350px;
-    width: 400px;
-    margin: 50px 0px;
-  }
-  .card__misalignment-1{
-    position: relative;
-    right: 50px;
-    bottom: 0;
-  }
-  
-  .card__misalignment-2{
-    position: relative;
-    right: 50px;
-    bottom: 0;
-  }
-  .round__design-image{
-    width: 40%;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    left: 130px;
-    bottom: 40px; 
-  }*/
-
 /* Technologies section*/
 
 .second__section-tecnologics {
@@ -738,7 +683,7 @@ main {
 }
 
 .second__section-tecnologics h2 {
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
   padding-top: 80px;
 }
@@ -748,8 +693,8 @@ main {
 }
 
 .second__section-tecnologics .resolution__icons img{
-  width:30%; 
-  height:30%;
+  width:25%; 
+  height:25%;
   display: inline; 
 }
 
@@ -762,7 +707,7 @@ main {
   margin: 40px auto;
   text-align: center;
 }
-/* aplicando diseños para los links */
+/* applying design for links */
 .third__section-resources .links__design{
   font-size: 2rem;
   text-align: center;
@@ -775,49 +720,18 @@ main {
 }
 
 @media (max-width: 800px) {
-  /* .container__profiles {
-    display: flex;
-    flex-direction: column;
-    height: 1380px;
-    margin: 20px 150px;
-    width: 200px;
-  }
-  .card__profile{
-    height: 350px;
-    width: 400px;
-    margin: 50px 0px;
-  }
-  .container__profiles .card__misalignment-1{
-    position: relative;
-    right: 50px;
-    bottom: 0;
-  }
-  
-  .container__profiles .card__misalignment-2{
-    position: relative;
-    right: 50px;
-    bottom: 0;
-  }
-  .card__profile .round__design-image{
-    width: 40%;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    left: 130px;
-    bottom: 40px;
-  } */
   .second__section-tecnologics h2{
-    margin: 70px auto;
+    margin: 20px 0px;
   }
-/*   .second__section-tecnologics .resolution__icons{
+.second__section-tecnologics .resolution__icons{
     text-align: center;
   }
   
-  .second__section-tecnologics .resolution__icons img{
+.second__section-tecnologics .resolution__icons img{
     width:20%; 
     height:20%;
     display: inline; 
-  } */
+  }
 }
 
 /* Footer section */
@@ -855,7 +769,7 @@ footer {
   color: var(--clr-footer2);
 }
 .footer__copy {
-  /* height: 60px; */
+  height: 105px;
   padding: 1rem;
   background-color: var(--clr-footer2);
   display: flex;
