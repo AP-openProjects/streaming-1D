@@ -485,15 +485,11 @@ main {
 .title__cards {
   margin: 50px auto;
   padding-bottom: 50px;
-  text-align: left;
+  text-align: center;
   color: var(--clr-title);
 }
 
 /* Profile cards - general styles*/
-
-/* .description__profiles {
-  border: 2px solid green;
-} */
 
 .container__profiles {
   /* width: 100%; */
@@ -518,28 +514,42 @@ main {
   cursor: default;
   align-self: center;
   justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 .card__profile h2 {
+  /* margin: 10px; */
   margin-bottom: 15px;
   color: #7a7a7a;
 }
 
 .card__profile p {
+  height: 45%;
+  padding: 0 20px;
   line-height: 1.8;
   color: #6a6a6a;
   font-size: 1.4rem;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   text-align: center;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 .round__design-image{
-  width: auto;
+  /* width: auto; */
   height: 30%;
-  /* border-radius: 100%; */
+  border-radius: 100%;
   position: relative;
   /* left: 75px; */
   bottom: 30px;
+  border: 2px solid white;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 .card__misalignment {
@@ -554,12 +564,12 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f12711;
-  display: block;
-  margin-left: 19px;
+  /* display: block;
+  margin-left: 19px; */
 }
 
 .gradient__ribbon-1 {
-  display: block;
+  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(241, 39, 17);
@@ -569,8 +579,8 @@ main {
     rgba(245, 175, 25, 1) 100%
   );
   text-align: center;
-  position: relative;
-  bottom: 0px;
+  /* position: relative;
+  bottom: 0px; */
 }
 
 /* Second profile */
@@ -581,11 +591,11 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #12c2e9;
-  display: block;
-  margin-left: 19px;
+  /* display: block;
+  margin-left: 19px; */
 }
 .gradient__ribbon-2 {
-  display: block;
+  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(18, 194, 233);
@@ -595,8 +605,8 @@ main {
     rgba(196, 113, 237, 1) 100%
   );
   text-align: center;
-  position: relative;
-  bottom: 0px;
+  /* position: relative;
+  bottom: 0px; */
 }
 
 /* Third profile */
@@ -607,11 +617,11 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #1f4037;
-  display: block;
-  margin-left: 19px;
+  /* display: block;
+  margin-left: 19px; */
  }
 .gradient__ribbon-3{
-  display: block;
+  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(31, 64, 55);
@@ -621,8 +631,8 @@ main {
     rgba(153, 242, 200, 1) 100%
   );
   text-align: center;
-  position: relative;
-  bottom: 20px;
+  /* position: relative;
+  bottom: 20px; */
  }
 
  /* Fourth profile */
@@ -633,12 +643,12 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #c31432;
-  display: block;
-  margin-left: 19px;
+  /* display: block; */
+  /* margin-left: 19px; */
 }
 
 .gradient__ribbon-4{
-  display: block;
+  /* display: block; */
   width: 100%;
   font-size: 16px;
   background: rgb(195, 20, 50);
@@ -648,8 +658,8 @@ main {
     rgba(36, 11, 54, 1) 100%
   );
   text-align: center;
-  position: relative;
-  bottom: 20px;
+  /* position: relative;
+  bottom: 20px; */
 }
 
 @media (max-width: 1350px) and (min-width:800px){
@@ -667,6 +677,12 @@ main {
     }
     .container__profiles {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .container__profiles {
+      margin: auto 100px;
     }
   }
 
@@ -705,6 +721,8 @@ main {
 
 .second__section-tecnologics h2 {
   margin: 40px auto;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .second__section-tecnologics .resolution__icons{
@@ -724,6 +742,7 @@ main {
 .third__section-resources h2 {
   color: var(--clr-title);
   margin: 40px auto;
+  text-align: center;
 }
 /* aplicando diseños para los links */
 .third__section-resources .links__design{
