@@ -490,23 +490,33 @@ main {
 
 /* Profile cards - general styles*/
 
+/* .description__profiles {
+  border: 2px solid green;
+} */
+
 .container__profiles {
   border: 2px solid red;
-  width: 100%;
-  display: flex;
+  /* width: 100%; */
+  margin: 75px 20px;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   /* max-width: 1200px; */
-  margin: auto;
+  /* margin: auto 60px; */
 }
 
 .card__profile {
-  width: 950px;
-  height: 320px;
-  margin: 20px;
+  position: relative;
+  width: 300px;
+  height: 350px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease-out;
   cursor: default;
+  align-self: center;
+  justify-self: center;
 }
 
 .card__profile h2 {
@@ -523,11 +533,11 @@ main {
 }
 
 .round__design-image{
-  width: 50%;
-  height: 100px;
-  border-radius: 50%;
+  width: auto;
+  height: 30%;
+  /* border-radius: 100%; */
   position: relative;
-  left: 60px;
+  /* left: 75px; */
   bottom: 30px;
 }
 
@@ -549,6 +559,7 @@ main {
 
 .gradient__ribbon-1 {
   display: block;
+  width: 100%;
   font-size: 16px;
   background: rgb(241, 39, 17);
   background: radial-gradient(
@@ -557,6 +568,8 @@ main {
     rgba(245, 175, 25, 1) 100%
   );
   text-align: center;
+  position: relative;
+  bottom: 0px;
 }
 
 /* Second profile */
@@ -572,6 +585,7 @@ main {
 }
 .gradient__ribbon-2 {
   display: block;
+  width: 100%;
   font-size: 16px;
   background: rgb(18, 194, 233);
   background: radial-gradient(
@@ -580,6 +594,8 @@ main {
     rgba(196, 113, 237, 1) 100%
   );
   text-align: center;
+  position: relative;
+  bottom: 0px;
 }
 
 /* Third profile */
@@ -595,6 +611,7 @@ main {
  }
 .gradient__ribbon-3{
   display: block;
+  width: 100%;
   font-size: 16px;
   background: rgb(31, 64, 55);
   background: radial-gradient(
@@ -603,6 +620,8 @@ main {
     rgba(153, 242, 200, 1) 100%
   );
   text-align: center;
+  position: relative;
+  bottom: 20px;
  }
 
  /* Fourth profile */
@@ -619,6 +638,7 @@ main {
 
 .gradient__ribbon-4{
   display: block;
+  width: 100%;
   font-size: 16px;
   background: rgb(195, 20, 50);
   background: radial-gradient(
@@ -627,6 +647,40 @@ main {
     rgba(36, 11, 54, 1) 100%
   );
   text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+@media (max-width: 1350px) {
+  .card__misalignment{
+    bottom: 0px;
+  }
+
+  /*
+  .card__profile{
+    height: 350px;
+    width: 400px;
+    margin: 50px 0px;
+  }
+  .card__misalignment-1{
+    position: relative;
+    right: 50px;
+    bottom: 0;
+  }
+  
+  .card__misalignment-2{
+    position: relative;
+    right: 50px;
+    bottom: 0;
+  }
+  .round__design-image{
+    width: 40%;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 130px;
+    bottom: 40px; 
+  }*/
 }
 
 /* Technologies section*/
@@ -671,7 +725,7 @@ main {
 }
 
 @media (max-width: 800px) {
-  .container__profiles {
+  /* .container__profiles {
     display: flex;
     flex-direction: column;
     height: 1380px;
@@ -701,7 +755,7 @@ main {
     position: relative;
     left: 130px;
     bottom: 40px;
-  }
+  } */
   .second__section-tecnologics h2{
     margin: 70px auto;
   }
