@@ -24,6 +24,10 @@ h2 {
   font-size: var(--fs-h2);
 }
 
+#contenedor {
+  width: 100%;
+  max-width: 1920px;
+}
 /* Header section*/
 /* Nav section */
 
@@ -473,8 +477,10 @@ main {
 
 /* Description section */
 body {
-  background-color: var(--clr-footer2);
-}
+  background: #AA076B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 /* Lineas separadoras del background */
 /* .bottom__separator-line-1 {
     position: absolute;
@@ -532,12 +538,12 @@ body {
   } */
  /* Diseño titulo cartas perfiles */
  .title__principal{
-  margin: 50px auto;
+  margin: 40px 5px;
   text-align: center;
   color: var(--clr-title);
 }
 .title__cards {
-  margin: 50px auto;
+  margin: 70px auto;
   text-align: left;
   color: var(--clr-title);
 }
@@ -590,6 +596,8 @@ body {
     rgba(196, 113, 237, 1) 100%
   );
   text-align: center;
+  position: relative;
+  top: 44px;
 }
 .container__profiles .card__profile .gradient__name-3{
   text-align: center;
@@ -631,11 +639,13 @@ body {
     rgba(36, 11, 54, 1) 100%
   );
   text-align: center;
+  position: relative;
+  top: 20px;
 }
 .card__profile {
   width: 950px;
-  height: 320px;
-  margin: 20px;
+  height: 360px;
+  margin: 10px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -663,19 +673,19 @@ body {
 }
 
 .container__profiles .card__profile h2 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #7a7a7a;
 }
 .container__profiles .card__profile p {
   line-height: 1.8;
   color: #6a6a6a;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
   text-align: center;
 }
 
 .second__section-tecnologics {
-  margin: 50px auto;
+  margin: 50px 0px;
   color: var(--clr-title);
 }
 
@@ -688,8 +698,8 @@ body {
 }
 
 .second__section-tecnologics .resolution__icons img{
-  width:30%; 
-  height:30%;
+  width:20%; 
+  height:20%;
   display: inline; 
 }
 
@@ -717,38 +727,54 @@ body {
   .container__profiles {
     display: flex;
     flex-direction: column;
-    height: 1380px;
-    margin: 20px 150px;
-    width: 200px;
+    justify-content: center;
+    height: 1600px;
+    margin: 20px 0px;
+    width: 0px;
   }
   .card__profile{
-    height: 350px;
-    width: 400px;
-    margin: 50px 0px;
-  }
-  .container__profiles .card__misalignment-1{
-    position: relative;
-    right: 50px;
-    bottom: 0;
-  }
-  
-  .container__profiles .card__misalignment-2{
-    position: relative;
-    right: 50px;
-    bottom: 0;
+    height: 450px;
+    width: 300px;
+    margin: 50px 150px;
   }
   .card__profile .round__design-image{
     width: 40%;
     height: 100px;
     border-radius: 50%;
     position: relative;
-    left: 130px;
+    left: 110px;
     bottom: 40px;
   }
-  .second__section-tecnologics h2{
-    margin: 70px auto;
+  .container__profiles .card__profile .gradient__ribbon-2{
+    display: block;
+    font-size: 16px;
+    background: rgb(18, 194, 233);
+    background: radial-gradient(
+      circle,
+      rgba(18, 194, 233, 1) 0%,
+      rgba(196, 113, 237, 1) 100%
+    );
+    text-align: center;
+    position: relative;
+    top: 4px;
   }
-/*   .second__section-tecnologics .resolution__icons{
+  .container__profiles .card__profile .gradient__ribbon-4{
+    display: block;
+    font-size: 16px;
+    background: rgb(195, 20, 50);
+    background: radial-gradient(
+      circle,
+      rgba(195, 20, 50, 1) 0%,
+      rgba(36, 11, 54, 1) 100%
+    );
+    text-align: center;
+    position: relative;
+    top: 4px;
+  }
+  .second__section-tecnologics h2{
+    margin: 70px 0px;
+  }
+  .second__section-tecnologics .resolution__icons{
     text-align: center;
   }
   
@@ -756,7 +782,17 @@ body {
     width:20%; 
     height:20%;
     display: inline; 
-  } */
+  }
+}
+
+@media (max-width: 420px) {
+  .container__profiles{
+    width: 30px;
+  }
+
+  .card__profile {
+    margin: 50px auto;
+  }
 }
 
 /* Footer section */
@@ -794,7 +830,7 @@ footer {
   color: var(--clr-footer2);
 }
 .footer__copy {
-  /* height: 60px; */
+  height: 105px;
   padding: 1rem;
   background-color: var(--clr-footer2);
   display: flex;
