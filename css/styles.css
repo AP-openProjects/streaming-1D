@@ -26,11 +26,6 @@ h1 {
 h2 {
   font-size: var(--fs-h2);
 }
-
-#contenedor {
-  width: 100%;
-  max-width: 1920px;
-}
 /* Header section*/
 /* Nav section */
 
