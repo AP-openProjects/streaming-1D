@@ -484,6 +484,7 @@ main {
 }
 .title__cards {
   margin: 50px auto;
+  padding-bottom: 50px;
   text-align: left;
   color: var(--clr-title);
 }
