@@ -502,6 +502,8 @@ main {
   background-color: rgba(0, 0, 0, 0.849);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-bottom: 40px;
   background-blend-mode: multiply;
   margin-bottom: -90px;
