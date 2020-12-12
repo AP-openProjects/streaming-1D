@@ -672,6 +672,10 @@ main {
     .container__profiles {
       margin: auto 100px;
     }
+    .description__profiles-general {
+      padding-bottom: 105px;
+    }
+
   }
 /* Technologies section*/
 
@@ -683,7 +687,7 @@ main {
 .second__section-tecnologics h2 {
   margin: 20px auto;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 160px;
 }
 
 .second__section-tecnologics .resolution__icons{
