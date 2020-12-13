@@ -660,11 +660,11 @@ main {
   align-items: center;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   width: 350px;
   max-width: 350px;
   min-width: 300px;
-}
+} */
 
 .swiper-slide-active {
   transform: scale(1.1);
@@ -707,11 +707,11 @@ main {
       font-size: 20px;
     }
 
-    .swiper-slide {
+    /* .swiper-slide {
       width: 400px;
       max-width: 400px;
       min-width: 400px;
-    }
+    } */
     /* .container__profiles {
       margin: auto 100px;
     } */
