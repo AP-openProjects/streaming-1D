@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -424,7 +425,7 @@
                 <img class="round__design-image" src="img/perfil-martin.png" alt="Martin-foto">
                 <h2 class="gradient__name-1">Martin Doello</h2>
                 <p>Mi nombre es Martin Doello, tengo conocimientos básicos sobre: ​​HTML, CSS, Javascript (en proceso de aprendizaje).Mi plataforma favorita es Disney Plus y mi pasatiempo son los videojuegos y comer asados ​​al sol.</p>
-                <div class="gradient__ribbon-1">Desarrollo Web</div>
+                <div class="gradient__ribbon gradient__ribbon-1">Desarrollo Web</div>
             </div>
           </div>
 
@@ -435,7 +436,7 @@
                 <h2 class="gradient__name-2">Junior Vitteri</h2>
                 <p class="text__align-2"> Mi nombre es Junior Vitteri, estoy aprendiendo sobre desarrollo web.
                   ¡Me gusta jugar al fútbol y ver Netflix por la noche!</p>
-                <div class="gradient__ribbon-2">Desarrollo Web</div>
+                <div class="gradient__ribbon gradient__ribbon-2">Desarrollo Web</div>
             </div>
           </div>
 
@@ -449,7 +450,7 @@
                 <p>Estudiante - Tengo conocimientos básicos de HTML, CSS y JAVASCRIPT.
                   Mi plataforma de transmisión favorita es Spotify, ya que me gusta escuchar música todo el tiempo.
                   Soy practicante de jiu-jitsu japonés.</p>
-                <div class="gradient__ribbon-3">Desarrollo Web</div>
+                <div class="gradient__ribbon gradient__ribbon-3">Desarrollo Web</div>
             </div>
           </div>
 
@@ -460,7 +461,7 @@
                 <img class="round__design-image" src="img/perfil-gonzalo.jpeg" alt="Gonzalo Lamas-foto">
                 <h2 class="gradient__name-4">Gonzalo Lamas</h2>
                 <p>Mi nombre es Gonzalo Lamas, me gusta aprender constantemente sobre la web. Mi plataforma preferida de streaming es Twitch, y me gustan los videojuegos de fútbol.</p>
-                <div class="gradient__ribbon-4">Desarrollo Web</div>
+                <div class="gradient__ribbon gradient__ribbon-4">Desarrollo Web</div>
             </div>
           </div>
 
@@ -468,6 +469,8 @@
 
         </div>
       </div>
+      </div>
+      
         <div class="second__section-tecnologics">
             <h2>Tecnologías Utilizadas</h2>
         <div class="resolution__icons">
@@ -526,6 +529,30 @@
     <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
     <script src="js/navscript.js"></script>
     <script src="js/flipcard.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Iniciar swipe -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        slidesPerView: 'auto',
+        coverflowEffect: {
+        rotate: 0,
+        stretch: 50,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+      },
+        spaceBetween: 40,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 
 </html>
