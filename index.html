@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -468,6 +468,8 @@
 
 
         </div>
+        <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
       </div>
       </div>
       
@@ -547,10 +549,10 @@
         centeredSlides: true,
         grabCursor: true,
         loop: false,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: false,
+      },
       });
     </script>
 </body>
