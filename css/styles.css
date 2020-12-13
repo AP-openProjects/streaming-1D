@@ -509,6 +509,11 @@ main {
   margin-bottom: -90px;
 }
 
+.swiper-slide {
+  align-self: center;
+  justify-self: center;
+}
+
 .container__profiles {
   margin: 35px 20px;
   display: grid;
