@@ -660,11 +660,9 @@ main {
   align-items: center;
 }
 
-/* .swiper-slide {
-  width: 350px;
-  max-width: 350px;
-  min-width: 300px;
-} */
+.swiper-slide {
+  padding-top: 30px;
+}
 
 .swiper-slide-active {
   transform: scale(1.1);
