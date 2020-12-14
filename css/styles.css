@@ -35,7 +35,6 @@ h2 {
   position: fixed;
   display: flex;
   background-color: transparent;
-  /* background-color: #4F0147; */
   color: var(--clr-title);
   width: 100%;
   justify-content: space-between;
@@ -97,13 +96,8 @@ h2 {
   text-transform: uppercase;
 }
 
-/* .nav__list.active {
-  display: flex;
-} */
-
 .nav__list-open .nav__list {
   display: flex;
-  /* background-color: var(--clr--bgc1-footer); */
 }
 
 .nav__list-open .bg__burger {
@@ -242,7 +236,6 @@ h2 {
 
 /* Cards section */
 .cards {
-  /* max-width: 1280px; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-content: center;
@@ -496,17 +489,18 @@ main {
   background-color: rgba(0, 0, 0, 0.849);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-bottom: 40px;
   background-blend-mode: multiply;
   margin-bottom: -90px;
+  margin-top: 90px;
+  position: relative;
 }
 
 .container__profiles {
   margin: 35px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  column-gap: 30px;
-  row-gap: 80px;
+  width: 100%;
 }
 
 .card__profile {
@@ -517,9 +511,7 @@ main {
   background: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease-out;
-  cursor: default;
-  align-self: center;
-  justify-self: center;
+  cursor: grab;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,11 +544,6 @@ main {
   border: 2px solid white;
   box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
   0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
-
-.card__misalignment {
-  position: relative;
-  bottom: 40px;
 }
 
 /* First profile */
@@ -603,14 +590,14 @@ main {
 
 /* Third profile */
 
-.gradient__name-3{
+.gradient__name-3 {
   text-align: center;
   background: -webkit-linear-gradient(#1f4037, #99f2c8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #1f4037;
  }
-.gradient__ribbon-3{
+.gradient__ribbon-3 {
   width: 100%;
   font-size: 16px;
   background: rgb(31, 64, 55);
@@ -624,7 +611,7 @@ main {
 
  /* Fourth profile */
 
- .gradient__name-4{
+ .gradient__name-4 {
   text-align: center;
   background: -webkit-linear-gradient(#c31432, #240b36);
   -webkit-background-clip: text;
@@ -632,7 +619,7 @@ main {
   color: #c31432;
 }
 
-.gradient__ribbon-4{
+.gradient__ribbon-4 {
   width: 100%;
   font-size: 16px;
   background: rgb(195, 20, 50);
@@ -644,29 +631,39 @@ main {
   text-align: center;
 }
 
-@media (max-width: 1350px) and (min-width:800px){
-  .card__misalignment{
-    bottom: 0px;
-  }
+/* Slide */
 
-  .container__profiles {
-    grid-template-columns: 1fr 1fr;
-  }
- }
-  @media (max-width: 800px) {
-    .card__misalignment{
-      bottom: 0px;
-    }
-    .container__profiles {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-  }
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  padding-top: 30px;
+}
+
+.swiper-slide-active {
+  transform: scale(1.1);
+  transition: .4s;
+}
 
   @media (min-width: 1600px) {
-    .container__profiles {
-      margin: auto 100px;
+    .card__profile {
+      height: 450px;
+      width: 400px;
     }
-  }
+    
+    .card__profile h2 {
+      font-size: 4rem;
+    }
+
+    .card__profile p {
+      font-size: 1.8rem;
+    }
+
+    .gradient__ribbon {
+      font-size: 20px;
+    }
+  } 
 /* Technologies section*/
 
 .second__section-tecnologics {
@@ -677,11 +674,21 @@ main {
 .second__section-tecnologics h2 {
   margin: 20px auto;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 160px;
 }
 
-.second__section-tecnologics .resolution__icons{
+.resolution__icons{
   text-align: center;
+}
+
+.resolution__icons img {
+  transition: transform 200ms ease-in-out;
+}
+
+.resolution__icons img:hover:nth-child(1),
+img:hover:nth-child(2),
+img:hover:nth-child(3){
+  transform: scale(1.1);
 }
 
 .second__section-tecnologics .resolution__icons img{
@@ -732,7 +739,6 @@ footer {
   background-color: var(--clr--bgc1-footer);
 }
 .footer__contact {
-  /* height: 120px; */
   padding: 3rem;
   display: flex;
   justify-content: space-around;
