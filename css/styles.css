@@ -506,7 +506,7 @@ main {
 .card__profile {
   position: relative;
   width: 300px;
-  height: 350px;
+  height: 360px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -541,7 +541,7 @@ main {
   border-radius: 100%;
   position: relative;
   bottom: 30px;
-  border: 2px solid white;
+  border: 2px solid  #fff;
   box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
   0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
@@ -558,6 +558,7 @@ main {
 .gradient__ribbon-1 {
   width: 100%;
   font-size: 16px;
+  color:  #fff;
   background: rgb(241, 39, 17);
   background: radial-gradient(
     circle,
@@ -565,6 +566,26 @@ main {
     rgba(245, 175, 25, 1) 100%
   );
   text-align: center;
+}
+
+/* contact inside the cards */
+.user__contact-list {
+  list-style: none;
+}
+.user__contact-list li {
+  display: inline-block;
+}
+.user__contact-list li a {
+  text-decoration: none;
+}
+.user__contact-list li a i {
+  color: black;
+  border-radius: 10px;
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+.user__contact-list li a i:hover {
+  color: var(--clr-footer2);
 }
 
 /* Second profile */
@@ -579,6 +600,7 @@ main {
 .gradient__ribbon-2 {
   width: 100%;
   font-size: 16px;
+  color:  #fff;
   background: rgb(18, 194, 233);
   background: radial-gradient(
     circle,
@@ -600,6 +622,7 @@ main {
 .gradient__ribbon-3 {
   width: 100%;
   font-size: 16px;
+  color:  #fff;
   background: rgb(31, 64, 55);
   background: radial-gradient(
     circle,
@@ -622,6 +645,7 @@ main {
 .gradient__ribbon-4 {
   width: 100%;
   font-size: 16px;
+  color:  #fff;
   background: rgb(195, 20, 50);
   background: radial-gradient(
     circle,
@@ -671,10 +695,16 @@ main {
   color: var(--clr-title);
 }
 
+.second__section-tecnologics h1 {
+  margin: 1px auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
 .second__section-tecnologics h2 {
   margin: 20px auto;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 20px;
 }
 
 .resolution__icons{
@@ -692,9 +722,10 @@ img:hover:nth-child(3){
 }
 
 .second__section-tecnologics .resolution__icons img{
-  width:25%; 
-  height:25%;
-  display: inline; 
+  width:10%; 
+  height:10%;
+  display: inline;
+  margin: 20px; 
 }
 
 .third__section-resources {
@@ -727,9 +758,13 @@ img:hover:nth-child(3){
   }
   
 .second__section-tecnologics .resolution__icons img{
-    width:20%; 
-    height:20%;
-    display: inline; 
+    width:10%; 
+    height:10%;
+    display: inline;
+    margin: 10px; 
+  }
+.user__contact-list li a i:active {
+    color: var(--clr-footer2);
   }
 }
 
