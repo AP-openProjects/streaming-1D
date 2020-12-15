@@ -715,9 +715,7 @@ main {
   transition: transform 200ms ease-in-out;
 }
 
-.resolution__icons img:hover:nth-child(1),
-img:hover:nth-child(2),
-img:hover:nth-child(3){
+.resolution__icons img:hover:nth-child(1){
   transform: scale(1.1);
 }
 
@@ -758,8 +756,8 @@ img:hover:nth-child(3){
   }
   
 .second__section-tecnologics .resolution__icons img{
-    width:10%; 
-    height:10%;
+    width:15%; 
+    height:15%;
     display: inline;
     margin: 10px; 
   }
