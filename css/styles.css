@@ -291,6 +291,11 @@ main {
 }
 
 /* Cards section */
+
+.services {
+  scroll-margin-top: 90px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -491,6 +496,10 @@ main {
 }
 
 /* Description section */
+
+.description__profiles {
+  scroll-margin-top: 89px;
+}
 
  .title__principal-description {
    margin: 0 auto;
@@ -713,6 +722,7 @@ main {
 .second__section-tecnologics {
   margin: 20px 0px;
   color: var(--clr-title);
+  scroll-margin-top: 40px;
 }
 
 .second__section-tecnologics h1 {
