@@ -268,7 +268,7 @@ main {
 
 .card {
   background-color: transparent;
-  width: 185px;
+  width: 300px;
   height: 315px;
   border-radius: 10px;
   margin-top: 20px;
@@ -293,10 +293,10 @@ main {
 /* Cards section */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-content: center;
-  margin: auto 100px;
-  row-gap: 50px;
+  margin: auto 80px;
+  row-gap: 20px;
 }
 
 @media (max-width: 420px) {
@@ -307,8 +307,8 @@ main {
 
 .card {
   background-color: transparent;
-  width: 185px;
-  height: 315px;
+  width: 300px;
+  height: 355px;
   border-radius: 10px;
   margin-top: 20px;
   perspective: 1000px;
@@ -357,35 +357,36 @@ main {
 .card__front__img img{
   margin-left: auto;
   margin-right: auto;
+  width: 220px;
 }
 
 .card__front :nth-child(2){
   margin-top: 20px;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
 }
 
 .card__front :nth-child(3){
   color: gold;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .card__front__btn{
   position: absolute;
-  left: 100px;
-  top: 280px;
+  left: 110px;
+  top: 310px;
   background-color: #3A015C;
-  width: 65px;
-  height: 25px;
-  border-radius: 12px;
-  line-height: 27px;
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  line-height: 30px;
   box-shadow: 0px 2px 4px white inset, 0px 2px 2px grey;
   cursor:pointer;
 }
 
 .card__front__btn p{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: white;
   cursor:pointer;
 }
@@ -412,7 +413,7 @@ main {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 185px;
+  width: 300px;
   height: 80px; 
   display: flex;
   align-items: center;    
@@ -425,21 +426,35 @@ main {
   margin-left: auto;
   margin-right: auto;
   font-weight: bold;
+  font-size: 4rem;
 }
 
 .card__back__body {
   position: absolute;
   top: 80px;
-  width: 185px;
-  height: 235px;
+  width: 300px;
+  height: 275px;
+  padding-top: 0px;
+  padding-right: 10px;
   border: 1px solid #4F0147;
   border-radius: 0px 0px 10px 10px;
 }
 
-.card__back__body p{
+.card__back__body-info {
+  display: flex;
+}
+
+.card__back__body-title {
+  color: rgb(84, 84, 235);
+  font-size: 1.6rem;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: left;
+} 
+.card__back__body-content {
   color: white;
-  font-size: 1.7rem;
-  margin-top: 10px;
+  font-size: 1.6rem;
+  margin-top: 5px;
   margin-left: 5px;
   text-align: left;
 }
@@ -447,7 +462,7 @@ main {
 .card__back__btn {
   position: absolute;
   bottom: 15px;
-  left: 100px;
+  left: 110px;
   width: 65px;
   height: 20px;
   background-color: white;    
