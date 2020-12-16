@@ -411,12 +411,13 @@
       </div>
     </section>
     <section class="description__profiles" id="description">
-      <div class="description__profiles-general swiper-container">
-        <h1 class="title__principal">QUIÉNES SOMOS</h1>
-        <h2 class="title__cards">Integrantes</h2>
+      <div class="description__profiles-general">
+      <h1 class="title__principal title__principal-description">QUIÉNES SOMOS</h1>
+      <h2 class="title__cards">Integrantes</h2>
+      <div class="swiper-container">
         <div class="container__profiles swiper-wrapper">
           <div class="swiper-slide">
-            <div class="card__profile card__misalignment">
+            <div class="card__profile">
                 <img class="round__design-image" src="img/perfil-martin.png" alt="Martin-foto">
                 <h2 class="gradient__name-1">Martin Doello</h2>
                 <p>Mi nombre es Martin Doello, tengo conocimientos básicos sobre: ​​HTML, CSS, Javascript (en proceso de aprendizaje).Mi plataforma favorita es Disney Plus y mi pasatiempo son los videojuegos y hacer asados.</p>
@@ -445,7 +446,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card__profile card__misalignment">
+            <div class="card__profile">
                 <img class="round__design-image" src="img/perfil-javier.jpg" alt="Javier Diaz-foto">
                 <h2 class="gradient__name-3">Javier Diaz</h2>
                 <p>Estudiante - Tengo conocimientos básicos de HTML, CSS y JAVASCRIPT.
@@ -475,14 +476,18 @@
             </div>
           </div>
         </div>
+            <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
         <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
-      </div>
+    </div>
+    </div>
         <div class="second__section-tecnologics">
           <h1>Descripción del proyecto</h1>
           <h2>Tecnologías Utilizadas</h2>
         <div class="resolution__icons">
-          <img src="img/html-css-js.png" style="width: 420px;height: 150px;" alt="tecnologias-programacion">
+          <img class="resolution__icons-img" src="img/html-css-js.png" alt="tecnologias-programacion">
         </div>
         </div>
         <div class="third__section-resources">
@@ -543,6 +548,10 @@
         depth: 350,
         modifier: 1,
         slideShadows: true,
+      },  
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
         spaceBetween: 40,
         centeredSlides: true,

@@ -17,6 +17,13 @@ background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-2
 background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 }
 
+.title__principal {
+    margin: 50px auto;
+    padding-top: 50px;
+    text-align: center;
+    color: var(--clr-title);
+}
+
 /* Buttons */
 
 /* typography */
@@ -470,15 +477,13 @@ main {
 
 /* Description section */
 
- .title__principal{
-  margin: 50px auto;
-  padding-top: 50px;
-  text-align: center;
-  color: var(--clr-title);
+ .title__principal-description {
+   margin: 0 auto;
 }
+
 .title__cards {
-  margin: 50px auto;
-  padding-bottom: 50px;
+  margin: 40px auto;
+  /* padding-bottom: 50px; */
   text-align: center;
   color: var(--clr-title);
 }
@@ -493,7 +498,7 @@ main {
   background-position: center;
   padding-bottom: 40px;
   background-blend-mode: multiply;
-  margin-bottom: -90px;
+  padding-top: 0px;
   margin-top: 90px;
   position: relative;
 }
@@ -711,7 +716,9 @@ main {
   text-align: center;
 }
 
-.resolution__icons img {
+.resolution__icons-img {
+  width: 420px;
+  height: 150px;
   transition: transform 200ms ease-in-out;
 }
 
@@ -720,8 +727,8 @@ main {
 }
 
 .second__section-tecnologics .resolution__icons img{
-  width:10%; 
-  height:10%;
+  /* width:10%; 
+  height:10%; */
   display: inline;
   margin: 20px; 
 }
@@ -756,8 +763,8 @@ main {
   }
   
 .second__section-tecnologics .resolution__icons img{
-    width:15%; 
-    height:15%;
+    width:50%;
+    height:50%;
     display: inline;
     margin: 10px; 
   }
