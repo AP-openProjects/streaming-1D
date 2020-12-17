@@ -1,4 +1,4 @@
-#Streaming-1D 📺
+#Streaming-1D📺
 
 `Proyecto empezado por Aprender a Programar`
 
