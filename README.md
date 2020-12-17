@@ -1,7 +1,7 @@
 #Streaming-1D 📺
 `Proyecto empezado por Aprender a Programar`
 
-**¿Qué es Streaming-1D? **
+** ¿Qué es Streaming-1D? **
 Es una página web, hecha con HTML, CSS y JavaScript, con el objetivo de consolidar conocimientos adquiridos. La temática es sobre transmisiones de servicios, y su función es la de encontrar el mejor servicio de streaming según lo que se quiera disfrutar(música,películas,etc).
 
 **¿Cómo empezó este proyecto? **
