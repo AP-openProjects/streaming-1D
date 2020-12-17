@@ -23,5 +23,3 @@ Tenemos planeado extender las funcionalidades de Streaming-1D. Nuestra meta es a
 2. [Junior Vitteri](http://https://github.com/Juni-p "Junior Vitteri") 
 3. [Martin Doello](http://https://github.com/Argnto "Martin Doello") 
 4. [Gonzalo Lamas](http://https://github.com/gonzalolamas "Gonzalo Lamas")
-
-**readme**
