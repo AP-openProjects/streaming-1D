@@ -12,7 +12,8 @@ En el servidor de discord de Aprender a Programar, se propuso realizar proyectos
 
 **¿Dónde puedo ver la página?**
 
-La página está alojada en Github.io, se encuentra disponible desde el siguiente link.
+La página está alojada en Github.io, se encuentra disponible desde el siguiente [link](http://https://aromd.github.io/streaming-1D-develop/ "link").
+.
 
 **¿Es un proyecto que puede tener mayor desarrollo?**
 
