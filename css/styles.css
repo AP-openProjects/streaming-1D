@@ -142,6 +142,11 @@ h2 {
   background: #1b002c;
 }
 
+.nav__item.current a {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+}
+
 @media (min-width: 800px) {
   .nav {
     flex-direction: row;
@@ -173,6 +178,11 @@ h2 {
 
   .nav__link:hover {
     background: transparent;
+  }
+
+  .nav__item.current a {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
   }
 }
 

@@ -30,9 +30,9 @@
             </button>
             <!-- Nav items -->
             <div class="nav__list">
-                <ul class="nav__list-ul">
+                <ul class="nav__list-ul" id="menu">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Inicio</a>
+                        <a href="#home" class="nav__link current">Inicio</a>
                     </li>
                     <li class="nav__item">
                         <a href="#services" class="nav__link">Servicios</a>
@@ -795,6 +795,8 @@
     <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
     <script src="js/navscript.js"></script>
     <script src="js/flipcard.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jQuerynav.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Iniciar swipe -->
     <script>
@@ -822,6 +824,25 @@
             },
         });
     </script>
+      <script>
+        $('#menu').onePageNav({
+        currentClass: 'current',
+        changeHash: true,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing',
+        begin: function() {
+            //I get fired when the animation is starting
+        },
+        end: function() {
+            //I get fired when the animation is ending
+        },
+        scrollChange: function($currentListItem) {
+            //I get fired when you enter a section and I pass the list item of the section
+        }
+    });
+      </script>
 </body>
 
 </html>
