@@ -20,10 +20,10 @@ Tenemos planeado extender las funcionalidades de Streaming-1D. Nuestra meta es i
 
 **¿Quiénes participan del proyecto?**
 
-1. [Javier Diaz](http://https://github.com/Aromd "Javier Diaz")
-2. [Junior Vitteri](http://https://github.com/Juni-p "Junior Vitteri") 
-3. [Martin Doello](http://https://github.com/Argnto "Martin Doello") 
-4. [Gonzalo Lamas](http://https://github.com/gonzalolamas "Gonzalo Lamas")
+1. [Javier Diaz](https://github.com/Aromd "Javier Diaz")
+2. [Junior Vitteri](https://github.com/Juni-p "Junior Vitteri") 
+3. [Martin Doello](https://github.com/Argnto "Martin Doello") 
+4. [Gonzalo Lamas](https://github.com/gonzalolamas "Gonzalo Lamas")
 
 **Coordinador de Proyectos**
 
