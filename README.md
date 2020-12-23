@@ -27,7 +27,7 @@ Tenemos planeado extender las funcionalidades de Streaming-1D. Nuestra meta es i
 
 **Coordinador de Proyectos**
 
-[Esteban Arce](https://github.com/estebana28 "Esteban Arce")
+-  [Esteban Arce](https://github.com/estebana28 "Esteban Arce")
 
 
 [![Aprende a Programar](https://res.cloudinary.com/dnamyvmsq/image/upload/v1588210905/ap/branding/Iso_Grande.png "Aprende a Programar")](https://aprendeaprogramar.dev/ "Aprende a Programar")
