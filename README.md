@@ -1,23 +1,22 @@
 # Streaming-1D 📺
 
-`Proyecto empezado por Aprender a Programar`
+`Proyecto impulsado por Aprende a Programar`
 
 **¿Qué es Streaming-1D?**
 
-Es una página web, hecha con HTML, CSS y JavaScript, con el objetivo de consolidar conocimientos adquiridos. La temática es sobre transmisiones de servicios, y su función es la de encontrar el mejor servicio de streaming según lo que se quiera disfrutar(música,películas,etc).
+Es una página web, hecha con HTML, CSS y JavaScript, con el objetivo de consolidar conocimientos adquiridos y entrar en contacto con el trabajo en equipo a través del uso de diferentes herramientas. La temática es sobre servicios de transmisiones, y su función es la de encontrar el mejor servicio de streaming según lo que se quiera disfrutar(música,películas,etc).
 
 **¿Cómo empezó este proyecto?**
 
-En el servidor de discord de Aprender a Programar, se propuso realizar proyectos en donde participan desconocidos sin experiencia en IT para que aprendamos a trabajar en equipo.
+En el servidor de discord de Aprende a Programar, se lanzó la propuesta de crear proyectos en donde participen compañeros de la comunidad, sin experiencia en IT, para simular un flujo de trabajo profesional y ganar experiencia en cuanto a labor en equipo y herramientas de control de versiones.
 
 **¿Dónde puedo ver la página?**
 
-La página está alojada en Github.io, se encuentra disponible desde el siguiente [link](https://aromd.github.io/streaming-1D-develop/ "link")
-.
+La página está alojada en Github.io, se encuentra disponible desde el siguiente [link](https://aromd.github.io/streaming-1D-develop/ "link") .
 
 **¿Es un proyecto que puede tener mayor desarrollo?**
 
-Tenemos planeado extender las funcionalidades de Streaming-1D. Nuestra meta es aplicando nuevas tecnologías para que la página logre ser funcional y de fácil acceso para todo aquel usuario que le gusten los servicios de streaming 📺!
+Tenemos planeado extender las funcionalidades de Streaming-1D. Nuestra meta es ir aplicando nuevas tecnologías para que la página logre ser funcional y de fácil acceso para todo aquel usuario que le gusten los servicios de streaming 📺!
 
 **¿Quiénes participan del proyecto?**
 
